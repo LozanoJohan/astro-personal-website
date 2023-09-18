@@ -1,0 +1,42 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section addons="flex flex-col h-[34rem] items-center justify-around">
+    <div>
+        <h1 class="text-5xl mt-20 pb-11 md:text-6xl/[1.1] lg:text-8xl/[1.1]">Johan Lozano</h1>
+        <h2 class="text-3xl">
+            I’m a front-end developer and co-founder of <u
+                ><a href="/">Zalee</a></u
+            >. I love <u><a href="/">creating</a></u> and <u
+                ><a href="/">learning</a></u
+            >.
+        </h2>
+    </div>
+    <img
+        class="m-auto w-1/2"
+        src="https://static.wikia.nocookie.net/horadeaventura/images/2/27/Finn-El-Humano-Cuerpo-Entero-psd84986.png/revision/latest/thumbnail/width/360/height/360?cb=20151108043728&path-prefix=es"
+        alt="una imagen de johan"
+    />
+</Section>
+
+<style>
+    a {
+        color: rgb(212, 194, 56);
+    }
+
+    h1::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0%;
+        bottom: 10%;
+        width: 93%;
+        left: 7%;
+        background: linear-gradient(83.21deg, #651a8d 0%, #0084ff 100%);
+        -webkit-mask-image: radial-gradient(
+            rgba(0, 0, 0, 0.7),
+            transparent 80%
+        );
+    }
+</style>

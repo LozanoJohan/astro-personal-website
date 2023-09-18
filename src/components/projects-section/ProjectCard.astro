@@ -1,0 +1,23 @@
+---
+import ExternalLinkSvg from "./ExternalLinkSvg.astro";
+import GitHubSvg from "./GitHubSvg.astro";
+import Tech from "./tech.astro";
+const { title, img, description, link, github, technologies } = Astro.props;
+---
+
+<article
+    class="bg-gray-900 h-min w-80 shadow-2xl border-gray-600 border-[1px] ml-5 mr-5 mt-10"
+>
+    <img src={img} alt={title} class="h-1/2 w-full object-cover" />
+    <div class="p-4 text-left">
+        <h3 class="text-3xl">{title}</h3>
+        <p>{description}</p>
+    </div>
+    <div class="flex flex-wrap justify-center">
+        {technologies.map((tech) => <Tech tech={tech} />)}
+    </div>
+    <div class="flex justify-between m-4">
+        <GitHubSvg width="30"/>
+        <ExternalLinkSvg width="30"/>
+    </div>
+</article>

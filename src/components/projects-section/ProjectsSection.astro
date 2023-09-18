@@ -1,0 +1,48 @@
+---
+import Section from "../Section.astro";
+import ProjectCard from "./ProjectCard.astro";
+const posts = [
+    {
+        title: "Zalee",
+        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"',
+        github: "a",
+        link: "e",
+        technologies: ['Flutter', 'Firebase', 'Google Cloud']
+    },
+    {
+        title: "MyLearnCoach",
+        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"',
+        github: "a",
+        link: "e",
+        technologies: ['Python', 'Streamlit', 'ChatGPT-API']
+    },
+    {
+        title: "This Incredible Page/Blog",
+        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"',
+        github: "a",
+        link: "e",
+        technologies: ['Astro', 'Tailwind']
+    },
+];
+---
+
+<Section title="Projects">
+    <div class="flex flex-wrap justify-center">
+        {
+            posts.map((post) => (
+                <ProjectCard
+                    title={post.title}
+                    img={post.img}
+                    description={post.description}
+                    technologies={post.technologies}
+                />
+            ))
+        }
+    </div>
+</Section>
