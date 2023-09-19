@@ -1,38 +1,56 @@
-<aside
-    class="hover:rotate-180 transition-all flex flex-col fixed right-0 top-1/2 w-16 h-16 rounded-full bg-slate-50 content-center justify-center items-center mr-2 -translate-y-1/2"
->   
-    <div class="relative before:absolute before:bg-black before:w-96 before:h-50"></div>
-    <div
-        class="relative top-1/2 bg-black transition-all
-        before:absolute before:bg-[url('/src/icons/instagram.svg')] before:w-14 before:h-14 before:left-10"
-    >
-    </div>
-    <div
-        class="relative top-1/2 bg-black transition-all
-        before:absolute before:bg-[url('/src/icons/instagram.svg')] before:w-14 before:h-14 before:left-10"
-    >
-    </div>
-    <div
-        class="relative top-1/2 bg-black transition-all
-        before:absolute before:bg-[url('/src/icons/instagram.svg')] before:w-14 before:h-14 before:left-10"
-    >
-    </div>
-    <div
-        class="relative top-1/2 bg-black transition-all
-        before:absolute before:bg-[url('/src/icons/instagram.svg')] before:w-14 before:h-14 before:left-10"
-    >
-    </div>
-    <img
-        class=""
-        width="50"
-        height="50"
-        src="https://img.icons8.com/material/24/pokeball--v1.png"
-        alt="pokeball--v1"
-    />
-</aside>
+---
+import { Image } from "astro:assets";
+import pokeballSvg from "../icons/pokeball-one-svgrepo-com.svg";
+import { gitHubAccount, instagramAccount, linkedInAccount, twitterAccount } from "../constants";
+---
 
-<script>
-    const aside = document.querySelector('aside');
-    const divs = aside.querySelectorAll('div')
-    aside.addEventListener('click', () => divs.forEach((div, i) => div.classList.toggle(`rotate-[${(i+1)*15}deg]`)))
-</script>
+<aside
+    class="hover:rotate-180 transition-all flex flex-col fixed right-0 top-1/2 bg-white rounded-full content-center justify-center items-center mr-2 -translate-y-1/2"
+>
+    <div
+        class="fixed top-1/2 -translate-y-1/2 rounded-r-full translate-x-1/2 h-52 w-40"
+    >
+    </div>
+    <a href={linkedInAccount} target="_blank">
+        <span
+            class="relative top-1/2 bg-black transition-all
+            after:absolute after:bg-[url('/src/icons/linkedin.svg')] after:w-14 after:h-14 after:rotate-180 -translate-y-1/2 translate-x-1/2
+            after:left-9 after:top-20
+            before:absolute before:bg-gradient-radial before:w-16 before:h-16
+            before:left-[32px] before:top-[76px] before:rounded-full"
+        >
+        </span>
+    </a>
+    <a href={twitterAccount} target="_blank">
+        <span
+            class="relative top-1/2 bg-black transition-all
+            after:absolute after:bg-[url('/src/icons/x.svg')] after:w-14 after:h-14 after:rotate-180 -translate-y-1/2 translate-x-1/2
+            after:left-16 after:top-7
+            before:absolute before:bg-gradient-radial before:w-16 before:h-16
+            before:left-[62px] before:top-6 before:rounded-full"
+        >
+        </span>
+    </a>
+    <a href={gitHubAccount} target="_blank">
+        <span
+            class="relative top-1/2 bg-black transition-all -translate-y-1/2 translate-x-1/2
+            after:absolute after:bg-[url('/src/icons/github.svg')] after:w-12 after:h-12 after:rotate-180
+            after:left-[70px] after:-top-6
+            before:absolute before:bg-gradient-radial before:w-16 before:h-16
+            before:left-[62px] before:-top-8 before:rounded-full"
+        >
+        </span>
+    </a>
+    <a href={instagramAccount} target="_blank">
+        <span
+            class="relative top-1/2 bg-black transition-all
+            after:absolute after:bg-[url('/src/icons/instagram.svg')] after:w-14 after:h-14 -translate-y-1/2 translate-x-1/2 after:rotate-180
+            after:left-9 after:-top-20
+            before:absolute before:bg-gradient-radial before:w-16 before:h-16
+            before:left-[32px] before:-top-[84px] before:rounded-full"
+        >
+        </span>
+    </a>
+
+    <Image width="70" height="70" src={pokeballSvg} alt="pokeball" />
+</aside>

@@ -4,13 +4,7 @@ import linkedInSvg from "../../icons/linkedin.svg";
 import xSvg from "../../icons/x.svg";
 import instagramSvg from "../../icons/instagram.svg";
 import { Image } from "astro:assets";
-
-const width = "70";
-const twitterAccount = "https://twitter.com/JohanLo57983210";
-const linkedInAccount =
-    "https://www.linkedin.com/in/johan-david-lozano-leiva-4b871a25a/";
-const gitHubAccount = "https://github.com/LozanoJohan";
-const instagramAccount = "https://www.instagram.com/johanlozano51/";
+import { instagramAccount, linkedInAccount, twitterAccount, gitHubAccount } from "../../constants";
 ---
 
 <footer class="bg-slate-900/80 border-y-white border-t-2 px-6">
@@ -18,20 +12,20 @@ const instagramAccount = "https://www.instagram.com/johanlozano51/";
         Reach me
     </h3>
     <div class="flex justify-center pb-2">
-        <a href={instagramAccount}>
+        <a href={instagramAccount} target="_blank">
             <Image src={instagramSvg} alt="ícono de instagram." />
         </a>
-        <a href={gitHubAccount}>
+        <a href={gitHubAccount} target="_blank">
             <Image src={gitHubSvg} alt="ícono de github." />
         </a>
-        <a href={linkedInAccount}>
+        <a href={linkedInAccount} target="_blank">
             <Image src={linkedInSvg} alt="ícono de linkedin." />
         </a>
-        <a href={twitterAccount}>
+        <a href={twitterAccount} target="_blank">
             <Image src={xSvg} alt="ícono de x/twitter." />
         </a>
     </div>
-    <p>lozanojohan321@gmail.com</p>
+    <p class="active:bg-black">lozanojohan321@gmail.com</p>
     <p class="mt-5">Made with ❤️ using Astro🚀 and Tailwind💨</p>
     <p>©2023 johanlozano.me - All rights reserved and blablabla</p>
 </footer>

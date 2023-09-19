@@ -4,14 +4,14 @@ import { Image } from 'astro:assets';
 ---
 
 <nav
-    class="bg-black/[.7] relative text-white flex justify-between h-20 shadow-2xl border-gray-700 border-b-[1px] items-center p-10 
-    before:bg-gradient-to-br from-indigo-900 via-black to-red-950
+    class="bg-black/[.8] relative text-white flex justify-between h-20 shadow-2xl border-white border-b-[1px] items-center p-10 
+    before:bg-gradient-to-r from-indigo-900/75 via-teal-800/75 to-emerald-800/75
     before:absolute before:w-full before:h-full before:right-0 before:-z-10"
 >
     <Image src={logo} alt="Un logo increíble"/>
     <ul>
         <li class="text-2xl hover:text-gray-500 transition-all cursor-pointer">
-            Blog
+            <h2>Blog</h2> 
         </li>
     </ul>
 </nav>

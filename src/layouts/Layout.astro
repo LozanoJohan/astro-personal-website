@@ -14,20 +14,27 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
+		<style>
+			@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+		</style>
 	</head>
 	<body class="text-white font-mono font-extrabold text-center overflow-x-hidden max-w-10">
 		<Navbar />
 		<slot />
 		<ContactAside/>
+		<Footer />
 	</body>
-	<Footer />
 </html>
-<style>
+<style is:global>
 	body {
 		background-color: #000000;
 		opacity: 1;
-		background-image:  linear-gradient(rgba(21, 17, 56, 0.3) 4px, transparent 4px), linear-gradient(to right, rgba(21, 17, 56, 0.3) 4px, #000000 4px);
-		background-size: 40px 40px;
+		background-image:  linear-gradient(rgba(26, 23, 55, 0.3) 4px, transparent 4px), linear-gradient(to right, rgba(22, 19, 45, 0.3) 4px, #000000 4px);
+		background-size: 30px 30px;
+	}
+	h1, h2, h2 {
+		font-family: 'Nexa', sans-serif;
 	}
 </style>
 
