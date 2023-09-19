@@ -9,9 +9,15 @@ import { Image } from 'astro:assets';
     before:absolute before:w-full before:h-full before:right-0 before:-z-10"
 >
     <Image src={logo} alt="Un logo increíble"/>
-    <ul>
+    <ul class="flex">
         <li class="text-2xl hover:text-gray-500 transition-all cursor-pointer">
             <h2>Blog</h2> 
         </li>
+        <li class="text-2xl hover:text-gray-500 transition-all cursor-pointer contact ml-4">
+            <h2>Contact</h2> 
+        </li>
     </ul>
 </nav>
+<script>
+    document.querySelector('.contact').addEventListener('click', () => window.scrollTo(0, document.body.scrollHeight))
+</script>
