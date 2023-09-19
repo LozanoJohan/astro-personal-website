@@ -1,5 +1,6 @@
 ---
-import Footer from "../components/Footer.astro";
+import ContactAside from "../components/ContactAside.astro";
+import Footer from "../components/footer/Footer.astro";
 import Navbar from "../components/nav/Navbar.astro";
 const { title } = Astro.props;
 ---
@@ -17,6 +18,7 @@ const { title } = Astro.props;
 	<body class="text-white font-mono font-extrabold text-center overflow-x-hidden max-w-10">
 		<Navbar />
 		<slot />
+		<ContactAside/>
 	</body>
 	<Footer />
 </html>
@@ -24,8 +26,8 @@ const { title } = Astro.props;
 	body {
 		background-color: #000000;
 		opacity: 1;
-		background-image:  linear-gradient(rgba(5, 0, 53, 0.3) 4px, transparent 4px), linear-gradient(to right, #050035 4px, #000000 4px);
-		background-size: 80px 80px;
+		background-image:  linear-gradient(rgba(21, 17, 56, 0.3) 4px, transparent 4px), linear-gradient(to right, rgba(21, 17, 56, 0.3) 4px, #000000 4px);
+		background-size: 40px 40px;
 	}
 </style>
 

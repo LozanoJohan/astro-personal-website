@@ -1,0 +1,60 @@
+---
+import gitHubSvg from "../../icons/github.svg";
+import linkedInSvg from "../../icons/linkedin.svg";
+import xSvg from "../../icons/x.svg";
+import instagramSvg from "../../icons/instagram.svg";
+import { Image } from "astro:assets";
+
+const width = "70";
+const twitterAccount = "https://twitter.com/JohanLo57983210";
+const linkedInAccount =
+    "https://www.linkedin.com/in/johan-david-lozano-leiva-4b871a25a/";
+const gitHubAccount = "https://github.com/LozanoJohan";
+const instagramAccount = "https://www.instagram.com/johanlozano51/";
+---
+
+<footer class="bg-slate-900/80 border-y-white border-t-2 px-6">
+    <h3 class="mb-4 text-xl mt-2 md:text-2xl/[1.1] lg:text-3xl/[1.1]">
+        Reach me
+    </h3>
+    <div class="flex justify-center pb-2">
+        <a href={instagramAccount}>
+            <Image src={instagramSvg} alt="ícono de instagram." />
+        </a>
+        <a href={gitHubAccount}>
+            <Image src={gitHubSvg} alt="ícono de github." />
+        </a>
+        <a href={linkedInAccount}>
+            <Image src={linkedInSvg} alt="ícono de linkedin." />
+        </a>
+        <a href={twitterAccount}>
+            <Image src={xSvg} alt="ícono de x/twitter." />
+        </a>
+    </div>
+    <p>lozanojohan321@gmail.com</p>
+    <p class="mt-5">Made with ❤️ using Astro🚀 and Tailwind💨</p>
+    <p>©2023 johanlozano.me - All rights reserved and blablabla</p>
+</footer>
+
+<style>
+    footer {
+        position: relative;
+    }
+    footer::before {
+        position: absolute;
+        content: "";
+        background: linear-gradient(45deg, rgb(144, 40, 255), aqua);
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, 0);
+        z-index: -1;
+        -webkit-mask-image: linear-gradient(
+            to right,
+            rgb(255, 255, 255) 0%,
+            rgba(0, 0, 0, 0.1) 30%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.1) 70%,
+            rgb(255, 255, 255) 100%
+        );
+    }
+</style>

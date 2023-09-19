@@ -1,7 +1,8 @@
 ---
-import ExternalLinkSvg from "./ExternalLinkSvg.astro";
-import GitHubSvg from "./GitHubSvg.astro";
-import Tech from "./tech.astro";
+import externalLinkSvg from "../../icons/external-link.svg";
+import gitHubSvg from "../../icons/github.svg";
+import Tech from "./Tech.astro";
+import { Image } from 'astro:assets';
 const { title, img, description, link, github, technologies } = Astro.props;
 ---
 
@@ -17,7 +18,11 @@ const { title, img, description, link, github, technologies } = Astro.props;
         {technologies.map((tech) => <Tech tech={tech} />)}
     </div>
     <div class="flex justify-between m-4">
-        <GitHubSvg width="30"/>
-        <ExternalLinkSvg width="30"/>
+        <a href={github}>
+            <Image src={gitHubSvg} alt="ícono de github." />
+        </a>
+        <a href={link}>
+            <Image src={externalLinkSvg} alt="ícono de github." />
+        </a>
     </div>
 </article>
