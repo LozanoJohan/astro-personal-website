@@ -4,17 +4,19 @@ import Section from "./Section.astro";
 import me from "../images/yo.jpg";
 ---
 
-<Section addons="flex flex-col h-[34rem] items-center justify-around p-5">
+<Section addons="flex flex-col h-[34rem] mt-14 items-center justify-around ">
     <div>
-        <h1 class="text-5xl font-[1100] mt-14 pb-11 md:text-6xl/[1.1] lg:text-8xl/[1.1]">
+        <h1
+            class="text-5xl font-[1100] mt-14 pb-11 md:text-6xl/[1.1] lg:text-8xl/[1.1]
+                before:absolute before:-z-10 before:w-full before:top-[80px] before:h-[120vh] before:right-0"
+        >
             Johan Lozano
         </h1>
         <h2 class="text-3xl text-gray-400">
             I’m a front-end developer and co-founder of <u
-                ><a href="/">Zalee</a></u
-            >. I love <u><a href="/">creating</a></u> and <u
-                ><a href="/">learning</a></u
-            >.
+                ><a class="text-yellow-400" href="/">Zalee</a></u
+            >. I love <u><a class="text-yellow-400" href="/">creating</a></u>
+            and <u> <a class="text-yellow-400" href="/">learning</a></u>.
         </h2>
     </div>
     <Image
@@ -25,19 +27,11 @@ import me from "../images/yo.jpg";
 </Section>
 
 <style>
-    a {
-        color: rgb(212, 194, 56);
-    }
-
     h1::before {
-        position: absolute;
-        z-index: -1;
-        content: "";
-        width: 100%;
-        height: 120vh;
-        top: 80px;
-        right: 0%;
-        background: radial-gradient(rgba(0, 41, 108, 0.423), rgba(0, 0, 0, .9) 90%),
+        background: radial-gradient(
+                rgba(0, 41, 108, 0.423),
+                rgba(0, 0, 0, 0.9) 90%
+            ),
             linear-gradient(to right, #9412da, #00488c);
         -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
     }

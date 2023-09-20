@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 import { instagramAccount, linkedInAccount, twitterAccount, gitHubAccount } from "../../constants";
 ---
 
-<footer class="bg-slate-900/80 border-y-white border-t-2 px-6">
+<footer class="bg-slate-900/80 border-y-white border-t-2 px-6 relative">
     <h3 class="mb-4 text-xl mt-2 md:text-2xl/[1.1] lg:text-3xl/[1.1]">
         Reach me
     </h3>
@@ -31,9 +31,6 @@ import { instagramAccount, linkedInAccount, twitterAccount, gitHubAccount } from
 </footer>
 
 <style>
-    footer {
-        position: relative;
-    }
     footer::before {
         position: absolute;
         content: "";
