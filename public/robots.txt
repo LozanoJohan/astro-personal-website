@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /private/      # Disallow crawling of the /private/ directory
+Disallow: /temp/         # Disallow crawling of the /temp/ directory
+Disallow: /admin/        # Disallow crawling of the /admin/ directory
+Disallow: /cgi-bin/      # Disallow crawling of the /cgi-bin/ directory
+Disallow: /images/       # Disallow crawling of the /images/ directory
+
+# Allow Googlebot to access everything
+User-agent: Googlebot
+Disallow:
+
+# Allow Bingbot to access everything
+User-agent: Bingbot
+Disallow:
+
+# Allow other search engines' crawlers to access everything
+User-agent: *
+Disallow:
