@@ -1,0 +1,71 @@
+[
+    {
+        "title": "Zalee",
+        "img": "src/images/zalee.png",
+        "description": "A start-up for helping nightclubes reach more people.",
+        "link": "https://web.zaleeapp.com",
+        "technologies": [
+            "Flutter",
+            "Firebase",
+            "Google Cloud"
+        ]
+    },
+    {
+        "title": "MyLearnCoach",
+        "img": "https://user-images.githubusercontent.com/108693709/248160788-c4424823-ee6b-4c0b-b0f7-08ad33c34250.png",
+        "description": "A chatbot with AI to learn faster, also a search engine for free Coursera courses from UNAL.",
+        "github": "https://github.com/LozanoJohan/MyLearnCoach",
+        "link": "https://github.com/LozanoJohan/MyLearnCoach",
+        "technologies": [
+            "Python",
+            "Streamlit",
+            "ChatGPT-API"
+        ]
+    },
+    {
+        "title": "This incredible page/blog",
+        "img": "https://assets.website-files.com/63e3d6905bacd6855fa38c1c/63e3d6905bacd670cda391e7_Astro%20Framework%20Thumb-min.jpg",
+        "description": "Just too beautiful.",
+        "github": "https://github.com/LozanoJohan/astro-personal-website",
+        "link": "https://johanlozano.me/",
+        "technologies": [
+            "Astro",
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "title": "Guess the image",
+        "img": "src/images/guess_the_img.png",
+        "description": "A react game, try to guess what are you seeing!",
+        "github": "https://github.com/LozanoJohan/guess-the-img",
+        "link": "https://lozanojohan.github.io/guess-the-img/",
+        "technologies": [
+            "React",
+            "Python",
+            "FastAPI"
+        ]
+    },
+    {
+        "title": "AstronautTap 2",
+        "img": "src/images/astronaut_tap-min.png",
+        "description": "A Unity game for kids with space theme.",
+        "github": "https://github.com/LozanoJohan/AstronautTap2",
+        "link": "https://es.ldplayer.net/games/astronaut-tap-2-on-pc.html",
+        "technologies": [
+            "Unity",
+            "C#"
+        ]
+    },
+    {
+        "title": "Auth users API",
+        "img": "src/images/fastapi.jpg",
+        "description": "A simple but incredible FastAPI project following the MVC arquitecture.",
+        "github": "https://github.com/LozanoJohan/auth-users-api",
+        "link": "https://github.com/LozanoJohan/auth-users-api",
+        "technologies": [
+            "Python",
+            "FastAPI"
+        ]
+    }
+]

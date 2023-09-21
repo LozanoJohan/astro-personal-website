@@ -1,8 +1,7 @@
 ---
-import ContactAside from "../components/ContactAside.astro";
 import Footer from "../components/footer/Footer.astro";
 import Navbar from "../components/nav/Navbar.astro";
-const { title, description } = Astro.props;
+const { title, description, addons } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,16 +18,15 @@ const { title, description } = Astro.props;
 			@import url('https://fonts.cdnfonts.com/css/nexa-bold');
 		</style>
 	</head>
-	<body class="text-white font-mono font-extrabold text-center overflow-x-hidden bg-black">
+	<body class=`flex flex-col text-white font-mono font-extrabold h-screen text-center overflow-x-hidden bg-black `>
 		<Navbar />
-		<slot />
-		<ContactAside/>
+		<div class=`flex-grow ${addons}`>
+			<slot/>
+		</div>
 		<Footer />
 	</body>
 </html>
 <style is:global>
-
-	
 	h1, h2, h2 {
 		font-family: 'Nexa', sans-serif;
 	}

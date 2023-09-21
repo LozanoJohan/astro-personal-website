@@ -1,17 +1,16 @@
 ---
-import AboutMe from '../components/AboutMe.astro';
-import BlogSection from '../components/blog_section/BlogSection.astro';
-import ProjectsSection from '../components/projects_section/ProjectsSection.astro';
-import Layout from '../layouts/Layout.astro';
+import AboutMe from "../components/AboutMe.astro";
+import ContactAside from "../components/ContactAside.astro";
+import BlogSection from "../components/blog_section/BlogSection.astro";
+import ProjectsSection from "../components/projects_section/ProjectsSection.astro";
+import Layout from "../layouts/Layout.astro";
 
-const description = `Johan Lozano is a front-end developer and co-founder of Zalee, he loves creating, writig ocassionally and learning nre technologies.`
+const description = `Johan Lozano is a front-end developer and co-founder of Zalee, he loves creating, writig ocassionally and learning nre technologies.`;
 ---
 
 <Layout title="Johan Lozano" description={description}>
-	<main>
-		<AboutMe/>
-		<BlogSection/>
-		<ProjectsSection/>
-	</main>
+	<AboutMe />
+	<BlogSection />
+	<ProjectsSection />
+	<ContactAside/>
 </Layout>
-

@@ -1,61 +1,10 @@
 ---
 import PostCard from "./PostCard.astro";
 import Section from "../Section.astro";
-const posts = [
-    {
-        title: "Post1",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post2",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post3",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post3",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post1",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post2",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post3",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post3",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
-    {
-        title: "Post3",
-        img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
-        date:
-            '18/09/2023',
-    },
+
+const posts = await Astro.glob('../../pages/posts/*.md');
+
+const postsd = [
     {
         title: "Post3",
         img: "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp",
@@ -65,15 +14,16 @@ const posts = [
 ];
 ---
 
-<Section class:list={'bg-white'} addons="relative mt-20 md:mt-48" title="Check my blog">
+<Section addons="relative mt-20 md:mt-48" id="blog" title="Check my blog">
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4
     before:absolute before:-z-10 before:top-52 before:w-screen before:h-full before:right-0">
         {
             posts.map((post) => (
                 <PostCard
-                    title={post.title}
-                    img={post.img}
-                    date={post.date}
+                    title={post.frontmatter.title}
+                    img={post.frontmatter.image.url}
+                    date={post.frontmatter.pubDate.slice(0, 10)}
+                    url={post.url}
                 />
             ))
         }

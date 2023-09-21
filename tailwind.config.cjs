@@ -17,7 +17,7 @@ module.exports = {
 				rotate1: 'rotate1 1s ease-in-out 1s',
 			},
 			backgroundImage: {
-				'gradient-radial': 'radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 75%)',
+				'gradient-radial': 'radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 85%)',
 			}
 		},
 	},
