@@ -7,21 +7,26 @@ const { title, img, description, link, github, technologies } = Astro.props;
 ---
 
 <article
-    class="bg-gray-900 relative flex flex-col justify-between h-96 overflow-ellipsis w-full shadow-2xl shadow-black border-gray-600 border-[1px] hover:scale-[1.03] transition-all"
+    class="bg-gray-900 h-full relative flex flex-col justify-between overflow-ellipsis w-full shadow-2xl shadow-black border-gray-600 border-[1px] hover:scale-[1.03] transition-all"
 >
     <a href={link} class="h-full">
-        <img src={img} alt={title} class="h-1/2 w-full object-cover" />
+        <img width={350} height={200} src={img} alt={title} class="h-48 w-full object-cover" />
         <header class="p-4 text-left">
             <h3 class="text-3xl">{title}</h3>
             <p class="text-gray-300">{description}</p>
         </header>
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center p-4">
             {technologies.map((tech) => <Tech tech={tech} />)}
         </div>
-        <footer class="flex justify-between p-4">
-            {github && <a class="absolute top-0 right-0 m-2 hover:scale-110 transition-all bg-gradient-radial" href={github}>
-                <Image src={gitHubSvg} width="40" alt="ícono de github." />
-            </a>}
-        </footer>
     </a>
+    {
+        github && (
+            <a
+                class="absolute top-0 right-0 m-2 hover:scale-110 transition-all bg-gradient-radial"
+                href={github}
+            >
+                <Image src={gitHubSvg} width="40" alt="ícono de github." />
+            </a>
+        )
+    }
 </article>

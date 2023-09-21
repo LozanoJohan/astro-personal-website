@@ -1,7 +1,7 @@
 [
     {
         "title": "Zalee",
-        "img": "src/images/zalee.png",
+        "img": "/images/zalee.png",
         "description": "A start-up for helping nightclubes reach more people.",
         "link": "https://web.zaleeapp.com",
         "technologies": [
@@ -36,7 +36,7 @@
     },
     {
         "title": "Guess the image",
-        "img": "src/images/guess_the_img.png",
+        "img": "/images/guess_the_img.png",
         "description": "A react game, try to guess what are you seeing!",
         "github": "https://github.com/LozanoJohan/guess-the-img",
         "link": "https://lozanojohan.github.io/guess-the-img/",
@@ -48,7 +48,7 @@
     },
     {
         "title": "AstronautTap 2",
-        "img": "src/images/astronaut_tap-min.png",
+        "img": "/images/astronaut_tap-min.png",
         "description": "A Unity game for kids with space theme.",
         "github": "https://github.com/LozanoJohan/AstronautTap2",
         "link": "https://es.ldplayer.net/games/astronaut-tap-2-on-pc.html",
@@ -59,7 +59,7 @@
     },
     {
         "title": "Auth users API",
-        "img": "src/images/fastapi.jpg",
+        "img": "/images/fastapi.jpg",
         "description": "A simple but incredible FastAPI project following the MVC arquitecture.",
         "github": "https://github.com/LozanoJohan/auth-users-api",
         "link": "https://github.com/LozanoJohan/auth-users-api",
