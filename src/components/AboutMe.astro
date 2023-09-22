@@ -2,9 +2,10 @@
 import { Image } from "astro:assets";
 import Section from "./Section.astro";
 import me from "../../public/images/yo.jpg";
+import nerd from "../../public/images/nerd.avif";
 ---
 
-<Section addons="flex flex-col h-[34rem] mt-14 items-center justify-around ">
+<Section addons="flex flex-col mt-14 items-center justify-around ">
     <div>
         <h1
             class="text-5xl font-[1100] mt-14 pb-11 md:text-6xl/[1.1] lg:text-8xl/[1.1]
@@ -14,16 +15,29 @@ import me from "../../public/images/yo.jpg";
         </h1>
         <h2 class="text-3xl text-gray-400">
             I’m a front-end developer and co-founder of <u
-                ><a class="text-yellow-400" href="https://zaleeapp.com">Zalee</a></u
-            >. I love <u><a class="text-yellow-400" href="https://github.com/LozanoJohan">creating</a></u>
-            and <u> <a class="text-yellow-400" href="#blog">learning</a></u>.
+                ><a class="text-yellow-400" href="https://zaleeapp.com">Zalee</a
+                ></u
+            >. I love <u
+                ><a
+                    class="text-yellow-400"
+                    href="https://github.com/LozanoJohan">creating</a
+                ></u
+            >
+             and <u> <a class="text-yellow-400" href="#blog">learning</a></u>.
         </h2>
     </div>
-    <Image
-        class="w-96 sm:w-96 h-96 object-cover my-10 border-2 border-white"
-        src={me}
-        alt="a happy person"
-    />
+    <div class="relative w-64 h-72 sm:w-96 sm:h-96 my-10 mx-10">
+        <Image
+            class=" object-cover h-full border-2 border-white absolute top-0 right-0"
+            src={nerd}
+            alt="a happy person"
+        />
+        <Image
+            class=" object-cover h-full border-2 border-white absolute top-0 right-0 hover:opacity-25 transition-all duration-1000"
+            src={me}
+            alt="a happy person"
+        />
+    </div>
 </Section>
 
 <style>

@@ -7,4 +7,7 @@ export default defineConfig({
   integrations: [tailwind()],
   output: 'hybrid',
   adapter: vercel(),
+  redirects: {
+    '/posts': '/#blog'
+  }
 });
