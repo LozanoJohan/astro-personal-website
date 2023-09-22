@@ -9,5 +9,5 @@ export default defineConfig({
   adapter: vercel(),
   redirects: {
     '/posts': '/#blog'
-  }
+  },
 });

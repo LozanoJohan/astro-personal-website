@@ -3,18 +3,49 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout addons="sm:px-12 md:px-24 lg:px-64 px-5 bg-blue-950/20 font-nexa">
-    <header class="text-left my-16 " >
-        <h1 class="text-5xl mb-3">{frontmatter.title}</h1>
-        <p>{frontmatter.pubDate.slice(0, 10)}</p>
-        <p><em>{frontmatter.description}</em></p>
-        <img class="my-10"
-            src={frontmatter.image.url}
-            width="300"
-            alt={frontmatter.image.alt}
-        />
-    </header>
-    <main class="flex-grow text-left [&>h2]:text-3xl [&>h2]:my-5 [&>ol]:list-decimal [&>*>li]:ml-7 [&>p]:mb-5">
-        <slot/>
-    </main>
+<Layout addons="font-nexa container h-full">
+    <article class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400
+    ">
+        <div class="max-w-3xl px-5 mx-auto">
+            <header class="text-left pt-16 ">
+                <h1 class="text-5xl mb-3">{frontmatter.title}</h1>
+                <p>{frontmatter.pubDate.slice(0, 10)}</p>
+                <p>{frontmatter.description}</p>
+                <img
+                    class="py-10"
+                    src={frontmatter.image.url}
+                    width="300"
+                    alt={frontmatter.image.alt}
+                />
+            </header>
+            <main
+                class="pt-5 text-left text-xl [&>h2]:text-3xl [&>h2]:py-5 [&>h3]:text-2xl [&>h3]:py-5 
+                [&>ol]:list-decimal [&>ul]:list-disc [&>*>li]:ml-7 [&>*>li]:mb-5 [&>p]:pb-5"
+            >
+                <slot />
+            </main>
+        </div>
+        
+    </article>
 </Layout>
+
+<style>
+    article {
+        background: linear-gradient(
+                217deg,
+                rgba(255, 0, 0, 0.19),
+                rgba(255, 0, 0, 0) 70.71%
+            ),
+            linear-gradient(
+                127deg,
+                rgba(0, 255, 0, 0.1),
+                rgba(0, 255, 0, 0) 70.71%
+            ),
+            linear-gradient(
+                336deg,
+                rgba(0, 0, 255, 0.19),
+                rgba(0, 0, 255, 0) 70.71%
+            );
+        width: 100vw;
+    }
+</style>
