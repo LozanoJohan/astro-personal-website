@@ -3,7 +3,7 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout addons="font-nexa container h-full">
+<Layout addons="font-nexa container h-full" title={frontmatter.title} description={frontmatter.description}>
     <article class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full
     ">
         <div class="max-w-3xl px-5 mx-auto">
