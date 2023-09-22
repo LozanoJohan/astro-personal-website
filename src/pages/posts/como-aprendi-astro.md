@@ -41,8 +41,8 @@ Puedes verlo completo en [johanlozano.me](https://johanlozano.me)
 En base a lo descrito en mi experiencia, rescato los siguientes puntos.
 
 1. **¿Qué es y para qué se usa?** Date la oportunidad de explorar nuevas tecnologías y ver por qué están cogiendo fuerza.
-2. **¿Por qué lo aprendería?** Si realmete te pareció util o simplemente divertido, es una buena razón para empezar a aprenderlo. Por ejemplo, si quisiera hacer una página que tenga poca o nula interacción con el usuario, no tiene mucho sentido usar React.
-3. **Encuentra de donde aprender.** Esto ya dependerá de si eres mejor viendo videos, cursos o leyendo tutoriales, en mi caso, considero que leer un texto, es mucho más rápido que escucharlo.
+2. **¿Por qué lo aprendería?** Si realmete te pareció util o simplemente divertido, es una buena razón para empezar a aprenderlo.
+3. **Encuentra de donde aprender.** Esto ya dependerá de si eres mejor viendo videos, cursos o leyendo tutoriales, en mi caso, considero que leer un texto es mucho más rápido que escucharlo.
 4. **Activo.** Sigue lo que sea que estés siguiendo mientras lo haces tu mismo, si solo miras o escuchas, se te olvidará y no estás aplicando nada.
 5. **Proyecto.** Idea un proyecto para demostrarte a ti mismo y todo el mundo que realmente aprendiste. Un proyecto que hagas sin tener que seguir un tutorial paso a paso.
 6. **Celebra y date un abrazo a ti mismo 🥳.** Si te das una recompensa, lo verás como algo positivo y querrás repetirlo, date cuenta de lo mucho que progresaste.
