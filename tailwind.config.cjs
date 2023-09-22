@@ -2,6 +2,9 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		fontFamily: {
+			'nexa': ['Nexa', 'sans-serif'],
+		},
 		extend: {
 			backgroundImage: {
 				'instagram': "url('/src/icons/instagram.svg')",

@@ -3,7 +3,7 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout addons="sm:px-12 md:px-24 lg:px-64 px-5 bg-blue-950/20">
+<Layout addons="sm:px-12 md:px-24 lg:px-64 px-5 bg-blue-950/20 font-nexa">
     <header class="text-left my-16 " >
         <h1 class="text-5xl mb-3">{frontmatter.title}</h1>
         <p>{frontmatter.pubDate.slice(0, 10)}</p>
@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
             alt={frontmatter.image.alt}
         />
     </header>
-    <main class="flex-grow text-left ">
-        <slot />
+    <main class="flex-grow text-left [&>h2]:text-3xl [&>h2]:my-5 [&>ol]:list-decimal [&>*>li]:ml-7 [&>p]:mb-5">
+        <slot/>
     </main>
 </Layout>
