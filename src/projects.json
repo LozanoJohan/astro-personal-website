@@ -3,7 +3,7 @@
         "title": "Zalee",
         "img": "/images/zalee.png",
         "description": "A start-up for helping nightclubes reach more people.",
-        "link": "https://web.zaleeapp.com",
+        "link": "https://zaleeapp.com",
         "technologies": [
             "Flutter",
             "Firebase",
