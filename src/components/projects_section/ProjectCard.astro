@@ -13,10 +13,10 @@ const { title, img, description, link, github, technologies } = Astro.props;
         <Image width={350} height={200} format="avif" src={img} alt={title} class="h-48 w-full object-cover" />
         <header class="p-4 text-left">
             <h3 class="text-3xl">{title}</h3>
-            <p class="text-gray-300">{description}</p>
+            <p class="text-gray-300 font-normal py-2">{description}</p>
         </header>
         <div class="flex flex-wrap justify-center p-4">
-            {technologies.map((tech) => <Tech tech={tech} />)}
+            {technologies.map((tech) => <Tech tech={tech} color="red"/>)}
         </div>
     </a>
     {
