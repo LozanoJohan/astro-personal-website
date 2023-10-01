@@ -3,29 +3,42 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout addons="font-nexa container h-full" title={frontmatter.title} description={frontmatter.description}>
-    <article class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full
-    ">
+<Layout
+    addons="font-nexa container h-full"
+    title={frontmatter.title}
+    description={frontmatter.description}
+>
+    <article
+        class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full"
+    >
         <div class="max-w-3xl px-5 mx-auto">
-            <header class="text-left pt-16 ">
+            <header class="text-left pt-16">
                 <h1 class="text-5xl mb-3">{frontmatter.title}</h1>
                 <p>{frontmatter.pubDate.slice(0, 10)}</p>
                 <p>{frontmatter.description}</p>
                 <img
-                    class="py-10"
+                    class="py-10 object-cover"
                     src={frontmatter.image.url}
                     width="300"
                     alt={frontmatter.image.alt}
                 />
             </header>
             <main
-                class="pt-5 text-left text-xl [&>h2]:text-3xl [&>h2]:py-5 [&>h3]:text-2xl [&>h3]:py-5 
+                class="pt-5 text-left text-xl [&>h2]:text-3xl [&>h2]:py-5 [&>h3]:text-2xl [&>h3]:py-5
                 [&>ol]:list-decimal [&>ul]:list-disc [&>*>li]:ml-7 [&>*>li]:mb-5 [&>p]:pb-5"
             >
                 <slot />
             </main>
         </div>
-        
+        <button
+            class="bg-yellow-600 p-3 mb-5 border-2 border-white text-red-700 font-bold"
+        >
+            <a
+                href="https://api.WhatsApp.com/send?phone=573142968931&text=ola%2C%20le%C3%AD%20tu%20post%20y%20me%20pareci%C3%B3%20incre%C3%ADble%2C%20pero..."
+            >
+                Dar feedback
+            </a>
+        </button>
     </article>
 </Layout>
 
