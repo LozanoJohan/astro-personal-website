@@ -9,6 +9,13 @@ image:
 tags: ["blogging", "learning in public", "self improvement", "memmory"]
 ---
 
+Índice
+
+- [🤔 ¿Por qué los nombres?](#-por-qué-los-nombres)
+- [Pero, ¿Cómo? 🤨](#pero-cómo-)
+- [Ahora sí, ¿Cómo? 😐](#ahora-sí-cómo-)
+
+
 Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía que me faltaban habilidades y por lo tanto tenía que conseguirlas y hacerlo rápido. Esta continua urgencia ha resultado en una continua busqueda de métodos para poder mejorar, esta vez te comparto el único de ellos que realmente ha hecho un cambio significativo en mi vida social. Cabe mencionar que todo esto gracias al libro *"Sin Limites"* de Jim Kwik.
 
 ## 🤔 ¿Por qué los nombres?

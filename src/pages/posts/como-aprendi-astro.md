@@ -9,6 +9,16 @@ image:
 tags: ["astro", "blogging", "learning in public", "tailwind"]
 ---
 
+Índice
+
+- [🤔 Por qué aprendería?](#-por-qué-aprendería)
+- [👁️ Aprendizaje activo](#️-aprendizaje-activo)
+  - [Astro](#astro)
+  - [Tailwind](#tailwind)
+  - [Resultado final](#resultado-final)
+- [😐 Conclusión](#-conclusión)
+- [❤️ What's next](#️-whats-next)
+
 Si hay algo que me encanta, aparte de programar, es aprender, aprender nuevas tecnologías me hace sentir una persona menos ignorante y me anima a descubrir nuevas cosas que al final termino amando.
 
 ## 🤔 Por qué aprendería?
