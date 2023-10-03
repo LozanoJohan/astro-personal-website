@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: '¿Te cuesta recordar nombres?'
 pubDate: 2023-10-01
-description: 'ola este es mi segundo post 🥳'
+description: 'ola este es mi increíble segundo post 🥳'
 image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'
