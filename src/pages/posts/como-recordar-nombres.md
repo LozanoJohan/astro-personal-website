@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: 'Cómo recordar los nombres de quien conoces?'
+title: '¿Te cuesta recordar nombres?'
 pubDate: 2023-10-01
-description: 'Métodos para mejorar tus habilidades sociales y de comunicación.'
+description: 'Como recordar los nombres de quien conoces.'
 image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'
