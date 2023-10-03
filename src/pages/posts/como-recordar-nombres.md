@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: '¿Te cuesta recordar nombres?'
 pubDate: 2023-10-01
-description: 'Como recordar los nombres de quien conoces.'
+description: 'ola este es mi segundo post 🥳'
 image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'
@@ -16,7 +16,7 @@ tags: ["blogging", "learning in public", "self improvement", "memmory"]
 - [Ahora sí, ¿Cómo? 😐](#ahora-sí-cómo-)
 
 
-Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía que me faltaban habilidades y por lo tanto tenía que conseguirlas y hacerlo rápido. Esta continua urgencia ha resultado en una continua busqueda de métodos para poder mejorar, esta vez te comparto el único de ellos que realmente ha hecho un cambio significativo en mi vida social. Cabe mencionar que todo esto gracias al libro *"Sin Limites"* de Jim Kwik.
+Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía que me faltaban habilidades y por lo tanto tenía que conseguirlas y hacerlo rápido. Esta continua urgencia ha resultado en una continua busqueda de métodos para poder mejorar, esta vez te comparto uno de los que realmente han hecho un cambio significativo en mi vida social. Cabe mencionar que todo esto gracias al libro *"Sin Limites"* de Jim Kwik ([puedes verlo en yt también](https://www.youtube.com/watch?v=Y7m59wRKXe4&t=934s&pp=ygUTamltIGt3aWsgY29uZmVyZW5jZQ%3D%3D)).
 
 ## 🤔 ¿Por qué los nombres?
 
