@@ -33,7 +33,7 @@ Nuestro cerebro no puede permitirse recordar cualquier instante de tiempo, eso r
 1. El inicio y fin de alguna situación.
 2. Las cosas muy raras o únicas.
 3. Lo que te genera alguna emoción fuerte, ya sea positiva o negativa.
-4. Lo que te haya funcionado a tí, ¿Hay algunas situaciones en particular que te resulten cencilas de recordar? ¿Por qué?
+4. Lo que te haya funcionado a tí, ¿Hay algunas situaciones en particular que te resulten sencilas de recordar? ¿Por qué?
 
 Piensalo, cuando hacían exposisiones por grupos en el colegion o universidad, probablemente recordaras más a el primero ya que simplemente tenías más energía, luego de algunos grupos directamente no prestabas atención.
 
@@ -47,7 +47,7 @@ Por último, tus momentos de profunda felicidad, venguenza, tristeza, orgullo, s
 
 ## Ahora sí, ¿Cómo? 😐
 
-La clave se encuentra en 2 palabras: "se suave", efectivamente se trata de un anagrama (también nos es fácil recordar puntos claves con anagramas), en ingles traduciría a:
+La clave se encuentra en 2 palabras: "se suave", efectivamente se trata de un anagrama (también nos es fácil recordar puntos claves con acrónimos), en ingles traduciría a:
 
 - **Belief:** Si no crees que puedes, no podrás.
 - **Excersise:** Practica, no lo lograrás de un día a otro.
