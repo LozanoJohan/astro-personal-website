@@ -22,7 +22,7 @@ Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía qu
 
 Si hay algo que les gusta a las personas es sentirse importantes, y recordar el nombre de alguien realmente lo va a hacer sentir especial, genera confianza, aumenta la empatía. Tomarte el trabajo de recordar un nombre es algo que la mayoría valora, es una muestra de interés y respeto ya que el nombre es algo que va fuertemente atado a la identidad de una persona.
 
-Recordar nombres es, en general, una habilidad social importante, te permite ser recordado de vuelta. Cuando alguien recuerda te habla por tu nombre es más probable que prestes atención y estés involucrado en la conversación, por lo tanto facilita en gran medida la comunicación.
+Recordar nombres es, en general, una habilidad social importante, te permite ser recordado de vuelta. Cuando alguien te habla por tu nombre es más probable que prestes atención y estés involucrado en la conversación, por lo tanto facilita en gran medida la comunicación.
 
 ## Pero, ¿Cómo? 🤨
 
@@ -39,11 +39,11 @@ Piensalo, cuando hacían exposisiones por grupos en el colegion o universidad, p
 
 Las últimas impresiones se resguardan mejor en nuestra mente ya que simplemente son lo último que recordamos. Si al despedirte de alguien de acabas de conocer, lo hacer con actitud alegre y desbordando carisma, esta se llevará esa imagen de tí, sin importar en gran medida lo que sucedió entre el inicio y final de la charla.
 
-Si algún día apareciera un doble elefante volador telépata con armas en la vida real, seguro que no lo olvidarías cierto? Sería jodidamente raro, y por eso se quedaría en nuestras mentes.
-
-Por último, tus momentos de profunda felicidad, venguenza, tristeza, orgullo, seguro que los guardas profundamente en tus recuerdos, seguro que recuerdas con cierto lujo de detalles la vez en que te caiste en público, no es así?
+Si algún día apareciera un doble elefante volador telépata con armas en la vida real, seguro que no lo olvidarías ¿Cierto? Sería jodidamente raro, y por eso se quedaría en nuestras mentes.
 
 ![doble elefante telépoata de guerra](https://i.pinimg.com/600x315/43/83/79/4383798e8fbcb504bd7372446207330d.jpg)
+
+Por último, tus momentos de profunda felicidad, venguenza, tristeza, orgullo, seguro que los guardas profundamente en tus recuerdos, apuesto a que recuerdas con cierto lujo de detalles la vez en que te caiste en público, ¿No es así?
 
 ## Ahora sí, ¿Cómo? 😐
 
@@ -52,7 +52,7 @@ La clave se encuentra en 2 palabras: "se suave", efectivamente se trata de un an
 - **Belief:** Si no crees que puedes, no podrás.
 - **Excersise:** Practica, no lo lograrás de un día a otro.
 
-- **Say:** Apenas escuches el nombre, dilo en voz alta, la retención aumenta bastante en este punto, a veces olvidas los nombres porque directamente nunca los esxuchaste, se vuelve un problema de atención y no de retención.
+- **Say:** Apenas escuches el nombre, dilo en voz alta, la retención aumenta bastante en este punto, a veces olvidas los nombres porque directamente nunca los escuchaste, se vuelve un problema de atención y no de retención. Mencionandolo te aseguras de que realmente estuviste presente.
 - **Use:** Cada que tengas la oportunidad, menciona el nombre, ayudará a tu memoria y mejora tu relación con la otra persona debido a los puntos mencionados anteriormente.
 - **Ask:** Pergunta lo que puedas, ¿De dónde viene?, ¿Qué representa?, esto mejorará aún más la empatía en la relación.
 - **Visualize:** Recuerdas que te dije que entre más raro y más emocionante, más recordarás, bueno, obviamente no vas a estar cada 5 min tratando de recordar el nombre para que no se olvide, así que para recordarlo a largo plazo, lo facil es hacer una imagen mental que relacione el nombre de aquella persona con lo más raro y exagerado que puedas imaginar, si lo piensas bien, recordamos mejor imágenes que palabras, y la próxima vez que veas a esa persona, recordarás la imagen creada y entonces, su nombre.
