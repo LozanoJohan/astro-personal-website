@@ -1,6 +1,7 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
 ---
 
 <Layout
@@ -29,16 +30,17 @@ const { frontmatter } = Astro.props;
             >
                 <slot />
             </main>
-        </div>
-        <button
-            class="bg-yellow-600 p-3 mb-5 border-2 border-white text-red-700 font-bold"
-        >
-            <a
-                href="https://api.WhatsApp.com/send?phone=573142968931&text=ola%2C%20le%C3%AD%20tu%20post%20y%20me%20pareci%C3%B3%20incre%C3%ADble%2C%20pero..."
+            <button
+                class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 mx-auto my-2 w-[300px]"
             >
-                Dar feedback
-            </a>
-        </button>
+                <a
+                    href="https://api.WhatsApp.com/send?phone=573142968931&text=ola%2C%20le%C3%AD%20tu%20post%20y%20me%20pareci%C3%B3%20incre%C3%ADble%2C%20pero..."
+                >
+                    Dar feedback
+                </a>
+            </button>
+            <SubscribeForm client:visible />
+        </div>
     </article>
 </Layout>
 
