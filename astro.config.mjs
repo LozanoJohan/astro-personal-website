@@ -8,7 +8,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://johanlozano.me",
-  output: 'hybrid',
+  output: 'server',
   adapter: vercel(),
   redirects: {
     '/posts': '/#blog'
