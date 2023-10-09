@@ -38,7 +38,7 @@ export const SubscribeForm = () => {
                     placeholder="Tu email"
                 />
                 <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-auto my-2 w-[300px]">
-                    Subscríbete
+                    Suscríbete
                 </button>
                 {message && <p className="text-center">{message}</p>}
             </form>
