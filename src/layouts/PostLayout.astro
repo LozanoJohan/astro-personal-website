@@ -10,7 +10,7 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
     description={frontmatter.description}
 >
     <article
-        class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full prose-ul:list-disc prose-ul:m-auto 
+        class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full prose-ul:list-disc prose-ul:m-auto bg-gray-950
         prose-blockquote:p-4 prose-blockquote:my-4 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:bg-gray-50 prose-blockquote:dark:border-gray-500 prose-blockquote:dark:bg-gray-800	"
     >
         <div class="max-w-3xl px-5 mx-auto bg-slate-900">
@@ -46,24 +46,7 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
 </Layout>
 
 <style>
-    article {
-        background: linear-gradient(
-                217deg,
-                rgba(255, 0, 0, 0.19),
-                rgba(255, 0, 0, 0) 70.71%
-            ),
-            linear-gradient(
-                127deg,
-                rgba(0, 255, 0, 0.1),
-                rgba(0, 255, 0, 0) 70.71%
-            ),
-            linear-gradient(
-                336deg,
-                rgba(0, 0, 255, 0.19),
-                rgba(0, 0, 255, 0) 70.71%
-            );
-        width: 100vw;
-    }
+
     blockquote {
         border-left: 5px solid #333; /* Left border color and width */
         padding: 15px; /* Padding around the text */
