@@ -73,7 +73,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   }
   return new Response(
     JSON.stringify({
-      message: "Te has subscrito exitosamente 🥳",
+      message: `${name}, te has subscrito exitosamente 🥳`,
     }),
     { status: 200 },
   );

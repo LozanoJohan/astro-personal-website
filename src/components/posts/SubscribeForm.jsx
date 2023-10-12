@@ -5,6 +5,8 @@ export const SubscribeForm = () => {
     const [message, setMessage] = useState("")
 
     async function submit(e) {
+        setMessage("");
+
 
         e.preventDefault();
         const formData = new FormData(e.target);
