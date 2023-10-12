@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: '¿Cómo aprendí 2 frameworks web en una semana?'
+title: '¿Cómo aprendí 2 frameworks web en una semana?🚀'
 pubDate: 2023-09-20
 description: 'Mi experiencia de aprendizaje con 2 increíbles nuevas tecnologías para mí.'
 image:
     url: 'https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/05/astro-homepage.png?fit=2396%2C1192&ssl=1'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public", "tailwind"]
+posted: true
 ---
 
 Índice

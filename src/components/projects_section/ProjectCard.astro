@@ -15,7 +15,7 @@ const { title, img, description, link, github, technologies } = Astro.props;
             <h3 class="text-3xl">{title}</h3>
             <p class="text-gray-300 font-normal py-2">{description}</p>
         </header>
-        <div class="flex flex-wrap justify-center p-4">
+        <div class="flex flex-wrap justify-center px-4 pb-4">
             {technologies.map((tech) => <Tech tech={tech} color="red"/>)}
         </div>
     </a>

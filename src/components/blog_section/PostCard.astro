@@ -4,13 +4,13 @@ const { title, img, date, url } = Astro.props;
 ---
 
 <article
-    class="bg-gray-900 w-full shadow-xl shadow-black border-gray-600 border-[1px] hover:scale-105 transition-all"
+    class="bg-gray-900 overflow-hidden max-w-sm shadow-xl shadow-black border-gray-600 border-[1px] hover:scale-105 transition-all"
 >
     <a href={url}>
-        <Image src={img} width={200} height={150} format="avif" alt={title} class="h-1/2 w-full object-center" />
+        <Image src={img} width={200} height={150} format="avif" alt={title} class="w-full" />
         <div class="p-4 text-left">
             <h3 class="text-xl">{title}</h3>
-            <p class="text-gray-400">{date}</p>
+            <p class="text-gray-400 mb-4">{date}</p>
         </div>
     </a>
 </article>
