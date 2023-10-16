@@ -17,6 +17,14 @@ posted: true
 - [🤔 ¿Por qué los nombres?](#-por-qué-los-nombres)
 - [Pero, ¿Cómo? 🤨](#pero-cómo-)
 - [Ahora sí, ¿Cómo? 😐](#ahora-sí-cómo-)
+  - [Belief](#belief)
+  - [Excersise](#excersise)
+  - [Say](#say)
+  - [Use](#use)
+  - [Ask](#ask)
+  - [Visualize](#visualize)
+  - [End](#end)
+- [Actúa](#actúa)
 
 
 
@@ -69,22 +77,38 @@ Por último, tus momentos de profunda felicidad, vergüenza, tristeza, orgullo, 
 La clave se encuentra en 2 palabras: "se suave", efectivamente se trata de un anagrama (también nos es fácil recordar puntos claves con acrónimos), en inglés traduciría a:
 
 
-- **Belief:** Si no crees que puedes, no podrás.
-- **Excersise:** Práctica, no lo lograrás de un día a otro.
-
-
-- **Say:** Apenas escuches el nombre, dilo en voz alta, la retención aumenta bastante en este punto, a veces olvidas los nombres porque directamente nunca los escuchaste, se vuelve un problema de atención y no de retención. Mencionando te aseguras de que realmente estuviste presente.
-- **Use:** Cada que tengas la oportunidad, menciona el nombre, ayudará a tu memoria y mejora tu relación con la otra persona debido a los puntos mencionados anteriormente.
-- **Ask:** Pregunta lo que puedas, ¿De dónde viene?, ¿Qué representa?, esto mejorará aún más la empatía en la relación.
-- **Visualize:** Recuerdas que te dije que entre más raro y más emocionante, más recordarás, bueno, obviamente no vas a estar cada 5 min tratando de recordar el nombre para que no se olvide, así que para recordarlo a largo plazo, lo fácil es hacer una imagen mental que relacione el nombre de aquella persona con lo más raro y exagerado que puedas imaginar, si lo piensas bien, recordamos mejor imágenes que palabras, y la próxima vez que veas a esa persona, recordarás la imagen creada y entonces, su nombre.
-- **End:** Al finalizar, menciona su nombre nuevamente, a parte de ayudarte en la memoria, dejará una buena última impresión.
+### Belief
+- Si no crees que puedes, no podrás.
+- "Soy malo recordando nombres" -> Eso puede cambiar.
+- "Es que mis clases en la u me tienen tostao" -> Puede ser, pero la habilidad aún se puede desarrollar.
+### Excersise
+- Práctica, no lo lograrás de un día a otro.
+- El primer día será dificil, el segundo también y el tercero, el cuarto será más sencillo.
+### Say
+- Apenas escuches el nombre, dilo en voz alta, la retención aumenta bastante en este punto.
+- A veces olvidas los nombres porque directamente nunca los escuchaste, se vuelve un problema de atención y no de retención. 
+- Mencionando te aseguras de que realmente estuviste presente.
+### Use
+- Cada que tengas la oportunidad, menciona el nombre, ayudará a tu memoria y mejora tu relación con la otra persona debido a los puntos mencionados anteriormente.
+### Ask
+- Pregunta lo que puedas, ¿De dónde viene?, ¿Qué representa?, esto mejorará aún más la empatía en la relación.
+### Visualize
+- Esta es la clave para recordar a largo plazo.
+- Entre más raro y más emocionante, más recordarás.
+- No vas a estar cada 5 min tratando de recordar el nombre para que no se olvide. 
+- Haz una imagen mental que relacione el nombre de aquella persona con lo más raro y exagerado que puedas imaginar.
+- Recordamos mejor imágenes que palabras.
+- La próxima vez que veas a esa persona, recordarás la imagen creada y entonces, su nombre.
+### End
+- Al finalizar, menciona su nombre nuevamente, a parte de ayudarte en la memoria, dejará una buena última impresión.
 
 
 Por último, asegúrate de tener una buena razón para recordar nombres, si no la tienes, olvidarás el nombre de la siguiente persona que conozcas, las razones dan lugar a resultados y lo opuesto se cumple también.
 
+## Actúa
 
+Si estás listo para mejorar tus habilidades sociales y crear conexiones más fuertes con las personas que conoces, comienza hoy mismo a practicar estas técnicas para recordar nombres. La próxima vez que te encuentres con alguien nuevo, pon en práctica lo que has aprendido y observa cómo cambia la dinámica de tus interacciones. Recuerda, recordar un nombre no solo es un signo de respeto, sino también una poderosa herramienta para fortalecer tus relaciones personales.
 
-
-
+No olvides compartir tu experiencia en los comentarios o en mi instragram @johanlozano51 o a mi whatsapp.
 
 
