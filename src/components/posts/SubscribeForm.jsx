@@ -5,12 +5,12 @@ export const SubscribeForm = () => {
     const [message, setMessage] = useState("")
 
     async function submit(e) {
-        setMessage("");
+        setMessage("Procesando...");
 
 
         e.preventDefault();
         const formData = new FormData(e.target);
-        const response = await fetch("/api/subscribeUser", {
+        const response = await fetch("/api/suscribeUser", {
             method: "POST",
             body: formData,
         });
