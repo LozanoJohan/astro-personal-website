@@ -18,7 +18,7 @@ export const POST: APIRoute = async ({ request }) => {
       // User with the given email exists
       return new Response(
         JSON.stringify({
-          message: "Ya estás apuntado 👍",
+          message: "Ya estás apuntado, gracias 👍",
         }),
         { status: 400 },
       );
@@ -27,7 +27,7 @@ export const POST: APIRoute = async ({ request }) => {
       await usersRef.add({ name, email });
       return new Response(
         JSON.stringify({
-          message: "Te subscribiste exitosamente 🥳",
+          message: `${name}, te suscribiste exitosamente 🥳`,
         }),
         { status: 200 },
       );
