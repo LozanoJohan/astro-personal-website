@@ -7,7 +7,7 @@ image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'
 tags: ["blogging", "learning in public", "self improvement", "memmory"]
-posted: true
+posted: false
 ---
 
 Índice
