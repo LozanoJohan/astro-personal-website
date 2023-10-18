@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: '¿Te cuesta recordar nombres?🛟'
 pubDate: 2023-10-01
-description: 'ola este es mi increíble segundo post 🥳'
+description: 'Recordar nombres es escencial para conectar y ampatizar más a fondo con tu interlocutor, ya sea en relaciones personales o profesionales. Descubre cómo desarrollar esta habilidad.'
 image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'
