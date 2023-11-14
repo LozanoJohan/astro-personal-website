@@ -5,7 +5,7 @@ import Section from "../Section.astro";
 const posts = await Astro.glob("../../pages/posts/*.{md,mdx}");
 ---
 
-<Section addons="relative mt-20 " id="blog" title="Check my blog">
+<Section addons="relative" id="blog" title="Check my blog">
     <div
         class="grid justify-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 
     before:absolute before:-z-10 before:top-52 before:w-screen before:h-full before:right-0"

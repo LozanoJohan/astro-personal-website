@@ -5,39 +5,39 @@ import me from "../../public/images/yo.jpg";
 import nerd from "../../public/images/nerd.avif";
 ---
 
-<Section addons="flex flex-col mt-14 items-center justify-around ">
+<Section addons="flex flex-col mt-16 items-center justify-around ">
     <div>
         <h1
-            class="text-5xl font-[1100] mt-14 pb-11 md:text-6xl/[1.1] lg:text-8xl/[1.1]
+            class="text-5xl font-[1100] pb-3 md:text-6xl/[1.1] lg:text-8xl/[1.1]
                 before:absolute before:-z-10 before:w-full before:top-[80px] before:h-[120vh] before:right-0"
         >
             Johan Lozano
         </h1>
-        <h2 class="text-3xl text-gray-400">
-            I’m a incredible person and co-founder of <u
-                ><a class="text-yellow-400" href="https://zaleeapp.com">Zalee</a
-                ></u
-            >. I love <u
+        <h2 class="text-xl md:text-2xl lg:text-3xl text-gray-400">
+            I love <u
                 ><a
                     class="text-yellow-400"
                     href="https://github.com/LozanoJohan">creating</a
                 ></u
-            >
-             and <u> <a class="text-yellow-400" href="#blog">learning</a></u>.
+            >. My passions are leading and public speaking. My purpose is to be useful to the world.
+            I'm co-founder of <u
+                ><a class="text-yellow-400" href="https://zaleeapp.com">Zalee</a
+                ></u
+            >.
         </h2>
     </div>
-    <div class="relative w-64 h-72 sm:w-96 sm:h-96 my-10 mx-10">
-        <Image
+    <div class="relative w-64 h-72 sm:w-96 sm:h-96 mt-10 mx-10">
+        <!-- <Image
             class=" object-cover h-full border-2 border-white absolute top-0 right-0"
             src={nerd}
             alt="a happy person"
             format="avif"
-        />
+        /> -->
         <Image
             class=" object-cover h-full border-2 border-white absolute top-0 right-0 hover:opacity-25 transition-all duration-1000"
             src={me}
             alt="a happy person"
-            format="avif"
+            loading="eager"
         />
     </div>
 </Section>
