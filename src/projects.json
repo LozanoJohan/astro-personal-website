@@ -1,5 +1,27 @@
 [
     {
+        "title": "Spotify Clone",
+        "img": "/images/spotify.png",
+        "description": "Spotify clone with state management and playable music.",
+        "github": "https://github.com/LozanoJohan/spotify-astro",
+        "link": "https://spotify-astro.vercel.app/",
+        "technologies": [
+            "Astro",
+            "React",
+            "Zustand"
+        ]
+    },
+    {
+        "title": "Cobalt",
+        "img": "/images/cobalt.png",
+        "description": "Landing page for a colaborative AI training platform",
+        "link": "https://cobalt-landing.vercel.app/",
+        "technologies": [
+            "Astro",
+            "Tailwind"
+        ]
+    },
+    {
         "title": "Zalee",
         "img": "/images/zalee.png",
         "description": "A start-up for helping nightclubes reach more people.",

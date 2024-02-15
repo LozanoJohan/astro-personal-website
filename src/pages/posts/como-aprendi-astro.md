@@ -7,6 +7,7 @@ image:
     url: 'https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/05/astro-homepage.png?fit=2396%2C1192&ssl=1'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public", "tailwind"]
+posted: true
 ---
 
 Índice
