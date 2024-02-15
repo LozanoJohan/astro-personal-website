@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: 'Cómo aprendí 2 frameworks web en una semana?'
+title: '¿Cómo aprendí 2 frameworks web en una semana?🚀'
 pubDate: 2023-09-20
 description: 'Mi experiencia de aprendizaje con 2 increíbles nuevas tecnologías para mí.'
 image:
