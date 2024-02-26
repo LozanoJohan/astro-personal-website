@@ -11,10 +11,11 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
     image={frontmatter.image.url}
 >
     <article
-        class="w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full prose-ul:list-disc prose-ul:m-auto bg-gray-950
-        prose-blockquote:p-4 prose-blockquote:my-4 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:bg-gray-50 prose-blockquote:dark:border-gray-500 prose-blockquote:dark:bg-gray-800	"
+        class="a w-screen h-full prose-headings:font-extrabold prose-a:text-blue-400 prose-img:w-full prose-ul:list-disc prose-ul:m-auto relative
+        prose-blockquote:p-4 prose-blockquote:my-4 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:bg-gray-50 prose-blockquote:dark:border-gray-500 prose-blockquote:dark:bg-gray-800
+        before:absolute before:-z-10 before:w-full before:h-full before:top-[0px] before:right-0"
     >
-        <div class="max-w-3xl px-5 mx-auto bg-slate-900">
+        <div class="max-w-3xl px-5 mx-auto bg-[#000810]">
             <header class="text-left pt-16">
                 <h1 class="text-5xl mb-3">{frontmatter.title}</h1>
                 <p>{frontmatter.pubDate.slice(0, 10)}</p>
@@ -42,35 +43,42 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
                 </a>
             </button>
             <SubscribeForm client:visible />
-            <div class="giscus mt-10 pb-6">
-    
-            </div>
+            <div class="giscus mt-10 pb-6"></div>
         </div>
     </article>
 </Layout>
 
 <style>
-
     blockquote {
         border-left: 5px solid #333; /* Left border color and width */
         padding: 15px; /* Padding around the text */
         margin: 10px 0; /* Margin to create space around the blockquote */
         font-style: italic; /* Italics for the quoted text */
     }
+    article::before {
+        background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 41, 108, 0.423) 50% ,
+                rgba(0, 0, 0, 1) 90%
+            ),
+            linear-gradient(to left, #9412da, #00488c);
+    }
 </style>
-<script src="https://giscus.app/client.js"
-        data-repo="LozanoJohan/astro-personal-website"
-        data-repo-id="R_kgDOKVQi5A"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOKVQi5M4CaK-h"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="es"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
+<script
+    src="https://giscus.app/client.js"
+    data-repo="LozanoJohan/astro-personal-website"
+    data-repo-id="R_kgDOKVQi5A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOKVQi5M4CaK-h"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="es"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>

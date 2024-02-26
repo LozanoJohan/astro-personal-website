@@ -2,35 +2,49 @@
 import PostCard from "./PostCard.astro";
 import Section from "../Section.astro";
 
-const posts = await Astro.glob('../../pages/posts/*.md');
+const posts = await Astro.glob("../../pages/posts/*.{md,mdx}");
 ---
 
-<Section addons="relative mt-20 " id="blog" title="Check my blog">
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4
-    before:absolute before:-z-10 before:top-52 before:w-screen before:h-full before:right-0">
+<Section addons="relative mt-20 " id="blog" title="Blog">
+    <div
+        class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4
+    before:absolute before:-z-10 before:top-52 before:w-screen before:h-full before:right-0"
+    >
         {
             posts.map((post) => {
-                return (post.frontmatter.posted &&
-                <PostCard
-                    title={post.frontmatter.title} 
-                    img={post.frontmatter.image.url}
-                    date={post.frontmatter.pubDate.slice(0, 10)}
-                    url={post.url}
-                />
-            )})
+                return (
+                    post.frontmatter.posted && (
+                        <PostCard
+                            title={post.frontmatter.title}
+                            img={post.frontmatter.image.url}
+                            date={post.frontmatter.pubDate.slice(0, 10)}
+                            url={post.url}
+                            description={post.frontmatter.description}
+                        />
+                    )
+                );
+            })
         }
     </div>
 </Section>
 <style>
     div::before {
-        background: radial-gradient(circle at 25%, #000, #222 50%, #333 75%, #000 80%);        
-        -webkit-mask-image: linear-gradient(
-                to bottom,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(0, 0, 0, 1) 30%,
-                rgba(0, 0, 0, 1) 50%,
-                rgba(0, 0, 0, 1) 70%,
-                rgba(255, 255, 255, 0) 100%
+        background: 
+            radial-gradient(rgba(0, 41, 108, 0.423), rgba(0, 0, 0, 0.9) 90%),
+            radial-gradient(
+                circle at 25%,
+                #000,
+                #9412da 40%,
+                #00488c 75%,
+                #000 80%
             );
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 1) 30%,
+            rgba(0, 0, 0, 1) 50%,
+            rgba(0, 0, 0, 1) 70%,
+            rgba(255, 255, 255, 0) 100%
+        );
     }
 </style>

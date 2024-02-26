@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: '¿Te cuesta recordar nombres?🛟'
 pubDate: 2023-10-01
-description: 'Recordar nombres es escencial para conectar y ampatizar más a fondo con tu interlocutor, ya sea en relaciones personales o profesionales. Descubre cómo desarrollar esta habilidad.'
+description: 'Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía que me faltaban habilidades y por lo tanto tenía que conseguirlas y hacerlo rápido. Esta continua urgencia ha resultado en una'
 image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'

@@ -3,38 +3,58 @@ import Icon from "astro-icon";
 ---
 
 <footer
-    class="bg-slate-900/80 border-y-white border-t-2 px-6 w-full relative bottom-0
+    class="bg-[#000810] border-y-white border-t-2 px-6 w-full relative bottom-0
                 before:absolute before:w-full before:h-full before:-z-10"
 >
-    <h3
-        class="text-xl my-2 md:text-2xl/[1.1] lg:text-3xl/[1.1] font-semibold"
+    <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+    >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024 Johan Lozano. All Rights Reserved.
+        </span>
+        <ul
+            class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Instagram</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">X</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Youtube</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Tiktok</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Linkedin</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Github</a>
+            </li>
+        </ul>
+    </div>
+    <!-- <h3
+        class="text-xl pt-6 my-2 md:text-2xl/[1.1] lg:text-3xl/[1.1] font-semibold"
     >
         Johan Lozano
-    </h3>
+    </h3> -->
+    <!-- <div class="flex justify-center gap-2 py-5">
+        <Icon class="text-white w-11" name="mdi:instagram" />
+        <Icon class="text-white w-11" name="simple-icons:twitter" />
+        <Icon class="text-white w-11" name="mdi:youtube" />
+        <Icon class="text-white w-11" name="ic:baseline-tiktok" />
+        <Icon class="text-white w-11" name="mdi:linkedin" />
+    </div>
     <p class="my-2">
         ©2023 johanlozano.me - All rights reserved and blablabla
     </p>
-    <div class="flex justify-center gap-2">
-        <Icon class="text-white w-7" name="mdi:instagram" />
-        <Icon class="text-white w-7" name="simple-icons:twitter" />
-        <Icon class="text-white w-7" name="ic:baseline-tiktok" />
-        <Icon class="text-white w-7" name="mdi:linkedin" />
-        <Icon class="text-white w-7" name="mdi:youtube" />
-    </div>
-    <p class="my-2">Made with ❤️ using Astro🚀 and Tailwind💨</p>
+    <p class="my-2">Made with ❤️ using Astro🚀 and Tailwind💨</p> -->
 </footer>
 
 <style>
     footer::before {
-        background: linear-gradient(45deg, rgb(144, 40, 255), aqua);
         transform: translate(-50%, 0);
-        -webkit-mask-image: linear-gradient(
-            to right,
-            rgb(255, 255, 255) 0%,
-            rgba(0, 0, 0, 0.1) 30%,
-            rgba(0, 0, 0, 0.1) 50%,
-            rgba(0, 0, 0, 0.1) 70%,
-            rgb(255, 255, 255) 100%
-        );
     }
 </style>

@@ -1,7 +1,7 @@
 ---
 import Section from "../Section.astro";
 import ProjectCard from "./ProjectCard.astro";
-import projects from "../../projects.json"
+import projects from "../../projects.json";
 ---
 
 <Section title="Projects">
@@ -28,12 +28,15 @@ import projects from "../../projects.json"
 <style>
     div::before {
         background: radial-gradient(
-            circle at 90%,
-            #000,
-            #7242f5 50%,
-            #f542aa 75%,
-            #000 80%
-        );
+                rgba(0, 41, 108, 0.423),
+                rgba(0, 0, 0, 0.9) 90%
+            ),
+            radial-gradient(
+                circle at 90%,
+                #9412da 50%,
+                #00488c 75%,
+                #000 80%
+            );
         -webkit-mask-image: linear-gradient(
             to bottom,
             rgba(255, 255, 255, 0) 0%,
