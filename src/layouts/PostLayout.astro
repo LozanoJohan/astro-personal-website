@@ -2,10 +2,12 @@
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
+import MailchimpSubscribeForm from "../components/posts/MailchimpSubscribeForm.astro";
+import {ViewsCounter} from '../components/blog_section/ViewsCounter.jsx'
 ---
 
 <Layout
-    addons="font-nexa container h-full"
+    addons="font-nexa font-normal container h-full"
     title={frontmatter.title}
     description={frontmatter.description}
     image={frontmatter.image.url}
@@ -18,7 +20,10 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
         <div class="max-w-3xl px-5 mx-auto bg-[#000810]">
             <header class="text-left pt-16">
                 <h1 class="text-4xl lg:text-5xl mb-3">{frontmatter.title}</h1>
-                <p>{frontmatter.pubDate.slice(0, 10)}</p>
+                <div class="flex justify-between">
+                    <p>{frontmatter.pubDate.slice(0, 10)}</p>
+                    <ViewsCounter page={frontmatter.title} client:load/>
+                </div>
                 <p>{frontmatter.description}</p>
                 <img
                     class="py-10 object-cover"
@@ -29,24 +34,18 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
             </header>
             <main
                 class="pt-5 text-left text-xl [&>h2]:text-3xl [&>h2]:py-5 [&>h3]:text-2xl [&>h3]:py-3
-                [&>ol]:list-decimal [&>ul]:list-disc [&>ul>li]:ml-7 [&>ol>li]:ml-7 [&>ul>li>ul>li]:ml-9 [&>*>li]:mb-3 [&>ul>li>ul>li]:my-[12px] [&>p]:pb-5"
+                [&>ol]:list-decimal [&>ul]:list-disc [&>ul>li]:ml-7 [&>ol>li]:ml-7 [&>ul>li>ul>li]:ml-9 [&>*>li]:mb-3 [&>ul>li>ul>li]:my-[12px] [&>p]:py-[15px]"
             >
                 <slot />
             </main>
-            <button
-                class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 mx-auto my-2 w-[300px]"
-            >
-                <a
-                    href="https://api.WhatsApp.com/send?phone=573142968931&text=ola%2C%20le%C3%AD%20tu%20post%20y%20me%20pareci%C3%B3%20incre%C3%ADble%2C%20pero..."
-                >
-                    Dar feedback
-                </a>
-            </button>
-            <SubscribeForm client:visible />
+            <h2 class="text-3xl mt-10 mb-3">¿Fue útil? Suscríbete a mi blog</h2>
+            <MailchimpSubscribeForm client:visible />
             <div class="giscus mt-10 pb-6"></div>
         </div>
     </article>
 </Layout>
+
+
 
 <style>
     blockquote {
@@ -59,7 +58,7 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
         background: linear-gradient(
                 to right,
                 rgba(0, 0, 0, 0.95) 10%,
-                rgba(0, 41, 108, 0.423) 50% ,
+                rgba(0, 41, 108, 0.423) 50%,
                 rgba(0, 0, 0, 1) 90%
             ),
             linear-gradient(to left, #9412da, #00488c);
@@ -80,5 +79,4 @@ import { SubscribeForm } from "../components/posts/SubscribeForm.jsx";
     data-lang="es"
     data-loading="lazy"
     crossorigin="anonymous"
-    async
-></script>
+    async></script>
