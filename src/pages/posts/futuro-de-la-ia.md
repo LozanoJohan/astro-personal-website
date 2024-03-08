@@ -1,8 +1,9 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: '¿Cuál es el futuro de la IA?'
-pubDate: 2023-09-20
+title: '¿Cuál es el futuro de la IA? Inteligencia General y Superinteligencia'
+pubDate: 2024-03-8
 description: 'El futuro de la inteligencia artificial'
+preview: 'La IA ha tenido avances grandísimos, y esto no es algo que haya empezado hace 2 o 3 años, cada año desde 2012 las capacidades de la inteligencia artificial han aumentado drásticamente, en campos'
 image:
     url: '/images/blog/agi.webp'
     alt: 'Un cerebro virtual simbolizando la AGI.'
@@ -25,10 +26,9 @@ posted: true
 
 ---
 
-
 La IA ha tenido avances grandísimos, y esto no es algo que haya empezado hace 2 o 3 años, cada año desde 2012 las capacidades de la inteligencia artificial han aumentado drásticamente, en campos como la visión (2012), los juegos de mesa complejos (2015), la síntesis de voz (2016), la generación de imágenes (2017), y demás. 
 
-Sin embargo estamos aún lejos del fin que le han dado las compañías líderes como OpenAI de "Garantizar que la inteligencia artificial general (AGI) beneficie a toda la humanidad", o líderes visionarios como Nick Bostrom quién advierte de los riesgos al lograr una Superinteligencia.
+Sin embargo estamos aún lejos del fin que le han dado las compañías líderes como OpenAI de "Garantizar que la inteligencia artificial general (**AGI**) beneficie a toda la humanidad", o líderes visionarios como Nick Bostrom quién advierte de los riesgos al lograr una **Superinteligencia**.
 
 ¿Qué significa una inteligencia artificial general? ¿Qué es la superinteligencia? Aquí analizaremos el camino que está tomando esta tecnología y hacia donde se dirige.
 
@@ -39,6 +39,10 @@ Compañías como Google Deepmind o OpenAI quieren dar solución a este problema,
 
 ### ¿Cuál es el estado actual?
 El 5 de diciembre de 2017, el equipo de DeepMind lanzó [AlphaZero](https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/), el sucesor de AlphaGo, que logró en 24 horas un nivel de juego sobrehumano no solo en Go, también en ajedrez y shogi al derrotar a los campeones del mundo, logrando una mayor capacidad de generalización rumbo hacia la AGI.
+
+Actualmente IBM Watson Health detecta el cáncer mejor a como lo haría un humano, analiza rápidamente los datos de los usuarios y es capaz de dar un tratamiento personalizado.
+
+[Tesla](https://www.tesla.com) y [Waymo](https://waymo.com/intl/es/) son empresas que proveen hardware y software con el que han logrado la conducción automática con el fin de minimizar accidentes.
 
 ChatGPT es otro gran ejemplo, aunque es capaz de la tarea específica de generar texto, esta abrió una amplia cantidad de tareas en las que es buena, como redactar blogs, escribir código o dar información de básicamente cualquier tema, lo que la hace un grandísimo paso hacia la AGI.
 
@@ -69,17 +73,13 @@ La gran capacidad de búsqueda de patrones y conexión entre el conocimiento de 
 
 Estos beneficios generales pueden trasladarse a cuantas disciplinas específicas queramos:
 
-**En medicina** creando nuevos medicamentos más eficientes y con menos efectos secundarios, o mejorando el diagnóstico y adaptándose rápidamente a las necesidades individuales de los pacientes. 
+En **medicina** creando nuevos medicamentos más eficientes y con menos efectos secundarios, o mejorando el diagnóstico y adaptándose rápidamente a las necesidades individuales de los pacientes. 
 
-Actualmente IBM Watson Health detecta el cáncer mejor a como lo haría un humano, analiza rápidamente los datos de los usuarios dando un tratamiento personalizado.
+En **física**, analizando y procesando grandes cantidades de datos experimentales y descubriendo posibles nuevas partículas y fenómenos físicos aumentando nuestro conocimiento del universo, lo que abre las puertas a nuevos inventos.
 
-En conducción, [Tesla](https://www.tesla.com) o [Waymo](https://waymo.com/intl/es/) prometen la conducción automática con el fin de minimizar accidentes.
+En **biotecnología** ayudando a descifrar nuestro ADN, hacer predicciones y desarrollar nuevos materiales y vacunas o descubrir más enzimas y moléculas de gran utilidad.
 
-En física, analizando y procesando grandes cantidades de datos experimentales y descubriendo posibles nuevas partículas y fenómenos físicos aumentando nuestro conocimiento del universo, lo que abre las puertas a nuevos inventos.
-
-En biotecnología ayudando a descifrar nuestro ADN, hacer predicciones y desarrollar nuevos materiales y vacunas o descubrir más enzimas y moléculas de gran utilidad.
-
-En Deep Learning, desarrollando modelos cada vez mejores.
+En **Deep Learning**, desarrollando modelos cada vez mejores.
 
 ## ¿Qué es la Superinteligencia Artificial (ASI)?
 Analicemos a fondo el último caso, una AGI mejor que nosotros en Deep Learning, tendrá una mayor capacidad que nosotros de crear inteligencias artificiales mejores, aquellas IAs mejores tendrán aún mayor capacidad de mejorarse, las cuales a su vez se mejorarían aún más, dando como resultado un crecimiento explosivo y exponencial de las capacidades de la IA.
@@ -93,7 +93,7 @@ La ASI es un punto de inflexión, es la llamada "singularidad tecnológica" ya q
 
 Algunas de la mayores preocupaciones son las siguientes:
 
-La perdida de control: La IA está creciendo muy rápido, tanto que a este ritmo el control y la adaptabilidad se hacen difíciles. Si una IA poco regulada se vuelve completamente autónoma, perderemos completamente su control y esta puede alejarse de valores humanistas, dejando nuestra destrucción en una posible decisión fuera de nuestro alcance.
+Los avances en IA son muy rápidos, tanto que a este ritmo el control y la adaptabilidad se hacen difíciles. Si una IA poco regulada se vuelve completamente autónoma, perderemos completamente su control y esta puede alejarse de valores humanistas, dejando nuestra destrucción en una posible decisión fuera de nuestro alcance.
 
 Los procesos ocultos al plantearle objetivos a una IA desalineada de valores éticos también son alarmantes. Yo podría decirle a una IA  "Maximiza mi felicidad" y esta podría manipular mi cerebro, manipularme psicológicamente, crear simulaciones virtuales o darme acceso a adicciones que harían feliz a cualquiera en el corto plazo.
 

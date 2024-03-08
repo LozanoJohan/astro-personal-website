@@ -22,7 +22,7 @@ import {ViewsCounter} from '../components/blog_section/ViewsCounter.jsx'
                 <h1 class="text-4xl lg:text-5xl mb-3">{frontmatter.title}</h1>
                 <div class="flex justify-between">
                     <p>{frontmatter.pubDate.slice(0, 10)}</p>
-                    <ViewsCounter page={frontmatter.title} client:load/>
+                    <!-- <ViewsCounter page={frontmatter.title} client:load/> -->
                 </div>
                 <p>{frontmatter.description}</p>
                 <img
@@ -34,12 +34,12 @@ import {ViewsCounter} from '../components/blog_section/ViewsCounter.jsx'
             </header>
             <main
                 class="pt-5 text-left text-xl [&>h2]:text-3xl [&>h2]:py-5 [&>h3]:text-2xl [&>h3]:py-3
-                [&>ol]:list-decimal [&>ul]:list-disc [&>ul>li]:ml-7 [&>ol>li]:ml-7 [&>ul>li>ul>li]:ml-9 [&>*>li]:mb-3 [&>ul>li>ul>li]:my-[12px] [&>p]:py-[15px]"
+                [&>ol]:list-decimal [&>ul]:list-disc [&>ul>li]:ml-7 [&>ol>li]:ml-7 [&>ul>li>ul>li]:ml-9 [&>*>li]:mb-3 [&>ul>li>ul>li]:my-[12px] [&>p]:py-[15px] [&>p]:text-white/80"
             >
                 <slot />
             </main>
-            <h2 class="text-3xl mt-10 mb-3">¿Fue útil? Suscríbete a mi blog</h2>
-            <MailchimpSubscribeForm client:visible />
+            <h2 class="text-3xl mt-24 mb-3">¿Fue útil? Suscríbete a mi blog</h2>
+            <MailchimpSubscribeForm  />
             <div class="giscus mt-10 pb-6"></div>
         </div>
     </article>

@@ -2,7 +2,8 @@
 layout: ../../layouts/PostLayout.astro
 title: '¿Te cuesta recordar nombres?🛟'
 pubDate: 2023-10-01
-description: 'Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía que me faltaban habilidades y por lo tanto tenía que conseguirlas y hacerlo rápido. Esta continua urgencia ha resultado en una'
+description: 'Métodos para aprender recordar nombres'
+preview: 'Nunca me destaqué por ser una persona muy social, todo lo contrario, sentía que me faltaban habilidades y por lo tanto tenía que conseguirlas y hacerlo rápido. Esta continua urgencia ha resultado en una'
 image:
     url: '/images/blog/names.png'
     alt: 'pensamiento.'

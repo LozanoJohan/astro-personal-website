@@ -10,7 +10,9 @@ export default defineConfig({
   integrations: [tailwind(), react(), mdx()],
   site: "https://johanlozano.me",
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   redirects: {
     '/posts': '/#blog'
   }

@@ -2,7 +2,8 @@
 layout: ../../layouts/PostLayout.astro
 title: '¿Cómo aprendí 2 frameworks web en una semana?🚀'
 pubDate: 2023-09-20
-description: 'Si hay algo que me encanta, aparte de programar, es aprender, aprender nuevas tecnologías me hace sentir una persona menos ignorante y me anima a'
+description: 'Métodos para aprender desarrollo web'
+preview: 'Si hay algo que me encanta, aparte de programar, es aprender, aprender nuevas tecnologías me hace sentir una persona menos ignorante y me anima a'
 image:
     url: 'https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/05/astro-homepage.png?fit=2396%2C1192&ssl=1'
     alt: 'The full Astro logo.'
