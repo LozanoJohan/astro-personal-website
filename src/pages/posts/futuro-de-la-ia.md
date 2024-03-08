@@ -42,7 +42,7 @@ El 5 de diciembre de 2017, el equipo de DeepMind lanzó [AlphaZero](https://deep
 
 Actualmente IBM Watson Health detecta el cáncer mejor a como lo haría un humano, analiza rápidamente los datos de los usuarios y es capaz de dar un tratamiento personalizado.
 
-[Tesla](https://www.tesla.com) y [Waymo](https://waymo.com/intl/es/) son empresas que proveen hardware y software con el que han logrado la conducción automática con el fin de minimizar accidentes.
+[Tesla](https://www.tesla.com) y [Waymo](https://waymo.com/intl/es/) son empresas que proveen hardware y software con el que han logrado la conducción automática con capacidades superiores a del ser humano con el fin de minimizar accidentes.
 
 ChatGPT es otro gran ejemplo, aunque es capaz de la tarea específica de generar texto, esta abrió una amplia cantidad de tareas en las que es buena, como redactar blogs, escribir código o dar información de básicamente cualquier tema, lo que la hace un grandísimo paso hacia la AGI.
 
