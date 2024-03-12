@@ -4,9 +4,6 @@ import { getFirestore } from "firebase-admin/firestore";
 
 export const POST: APIRoute = async ({ params }) => {
   const { title } = params; // Obtiene el ID de la página de los parámetros de la URL
-console.log("a");
-
-console.log("title");
 
   try {
     const db = getFirestore(app);
