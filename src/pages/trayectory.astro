@@ -1,0 +1,62 @@
+---
+import TimelineItem from "../components/timeline/TimelineItem.astro";
+import TimelineSection from "../components/timeline/TimelineSection.astro";
+import Layout from "../layouts/Layout.astro";
+
+const description =
+  "Trayectoria profesional y educativa de Johan Lozano - Desarrollador Frontend";
+
+const timeline = [
+  {
+    title: "Co-fundador Zalee",
+    date: "Julio 2023",
+    description:
+      "Fundación de empresa de desarrollo de software. Gestión de proyectos y equipo de desarrollo.",
+  },
+  {
+    title: "Desarrollo de MyLearnCoach",
+    date: "Marzo 2023",
+    description:
+      "Creación de chatbot educativo con IA y buscador de cursos de la UNAL.",
+  },
+  {
+    title: "Desarrollo de AstronautTap 2",
+    date: "Octubre 2022",
+    description: "Creación de juego educativo para niños usando Unity y C#.",
+  },
+  {
+    title: "Primer Contacto con la Programación",
+    date: "Febrero 2021",
+    description: "Aprendizaje de Python y fundamentos de programación.",
+  },
+];
+---
+
+<Layout title="Trayectoria | Johan Lozano" description={description}>
+  <section class="py-24 px-4 max-w-4xl mx-auto">
+    <h2 class="text-5xl md:text-6xl font-bold mb-16">Mi Trayectoria</h2>
+
+    <div class="relative">
+      <!-- Línea vertical central -->
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-purple-500 to-blue-500"
+      >
+      </div>
+
+      <TimelineSection
+        title="2023"
+        items={timeline.filter((item) => item.date.includes("2023"))}
+      />
+
+      <TimelineSection
+        title="2022"
+        items={timeline.filter((item) => item.date.includes("2022"))}
+      />
+
+      <TimelineSection
+        title="2021"
+        items={timeline.filter((item) => item.date.includes("2021"))}
+      />
+    </div>
+  </section>
+</Layout>

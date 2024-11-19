@@ -4,7 +4,7 @@ const { title, img, date, url, description } = Astro.props;
 ---
 
 <article
-    class="bg-[#000810] overflow-hidden max-h-96 shadow-2xl shadow-black hover:scale-[1.03] transition-all "
+    class="overflow-hidden max-h-96 bg-[#000810] shadow-2xl shadow-black hover:scale-[1.03] transition-all "
 >
     <a href={url}>
         <Image src={img} width={200} height={150} format="avif" alt={title} class="w-full h-1/2 object-cover" />

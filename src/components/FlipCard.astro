@@ -1,0 +1,67 @@
+---
+const { image } = Astro.props;
+---
+
+<div class="card w-64 relative sm:w-96 h-96 sm:h-96 flex-shrink-0 my-10 text-center text-white font-bold">
+  <div
+    class="card__content transition-transform duration-1000 sm:w-96 h-96 sm:h-96 w-64 "
+  >
+    <img
+      class="object-cover h-full w-full absolute top-0 right-0 blur-xl"
+      src={image}
+      alt="a happy person"
+    />
+    <div class="relative w-full h-full">
+      <img
+        loading="eager"
+        class="object-cover h-full w-full absolute top-0 right-0 card__front bottom-0 left-0"
+        src={image}
+        alt="a happy person"
+      />
+      <div class="absolute flex items-center justify-center bottom-0 right-0 p-4">
+        <div class="bg-black/70 p-3 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card__back absolute top-0 bottom-0 right-0 left-0 p-8 bg-teal-500 flex flex-col gap-4 items-center justify-center"
+    >
+      <h3 class="text-2xl font-bold">¡Hola! 👋</h3>
+      <p class="text-lg">
+        Soy Johan, un apasionado por la tecnología y la innovación. Me encanta compartir conocimiento y crear soluciones que impacten positivamente.
+      </p>
+      <div class="flex gap-2">
+        <a href="https://github.com" target="_blank" class="bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-opacity-90">
+          GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-opacity-90">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Vanilla CSS for flip card */
+  .card {
+    perspective: 800px;
+  }
+  .card__content {
+    transform-style: preserve-3d;
+  }
+  .card:hover .card__content {
+    transform: rotateY(0.5turn);
+  }
+
+  .card__front,
+  .card__back {
+    backface-visibility: hidden;
+  }
+  .card__back {
+    transform: rotateY(0.5turn);
+  }
+</style>

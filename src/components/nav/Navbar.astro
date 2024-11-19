@@ -1,32 +1,56 @@
 ---
 import jl from "../../icons/jl_big.svg";
+import Icon from "astro-icon";
 import { Image } from "astro:assets";
 ---
 
-<nav
-    class="bg-[#000810] relative text-white  h-20 shadow-2xl border-white border-b-[1px]  py-10 px-5
-    before:absolute before:w-full before:h-full before:right-0 before:-z-10"
->
-    <div class="w-full max-w-screen-xl flex justify-between items-center h-full mx-auto">
-        <a href="/"><Image src={jl} width={60} alt="Un logo increíble" /></a>
-        <ul class="flex">
-            <li
-                class="text-2xl hover:text-gray-500 transition-all cursor-pointer"
-            >
-                <h2><a href="/#blog">Blog</a></h2>
-            </li>
-            <li
-                class="text-2xl hover:text-gray-500 transition-all cursor-pointer contact ml-4"
-            >
-                <h2>Contact</h2>
-            </li>
+<nav class="relative w-full z-50">
+  <div class="absolute w-full">
+    <div class="fixed top-0 w-full backdrop-blur-xl bg-black/10">
+      <div
+        class="w-full max-w-screen-xl flex justify-between items-center mx-auto sticky top-0 text-white h-20 py-10 px-5"
+      >
+        <div class="flex items-center gap-4">
+          <a href="/"><Image src={jl} width={40} alt="Un logo increíble" /></a>
+          <a href="/" class="text-2xl font-semibold">Johan Lozano</a>
+        </div>
+        <ul class="flex gap-6">
+          <li
+            class="text-xl text-gray-300 hover:text-gray-400 transition-all cursor-pointer"
+          >
+            <a href="/projects">Proyectos</a>
+          </li>
+          <li
+            class="text-xl text-gray-300 hover:text-gray-400 transition-all cursor-pointer"
+          >
+            <a href="/trayectory">Trayectoria</a>
+          </li>
+          <li
+            class="text-xl text-gray-300 hover:text-gray-400 transition-all cursor-pointer"
+          >
+            <a href="/blog">Blog</a>
+          </li>
         </ul>
+        <div class="flex gap-4">
+            <a href="https://www.instagram.com/johanlozanol/" target="_blank">   
+                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={30} name="ph:instagram-logo-duotone" />
+            </a>
+            <a href="https://www.linkedin.com/in/johanlozanol/" target="_blank">
+                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={30} name="ph:linkedin-logo-duotone" />
+            </a>
+            <a href="https://github.com/LozanoJohan" target="_blank">
+                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={30} name="ph:github-logo-duotone" />
+            </a>
+        </div>
+      </div>
+    
     </div>
+  </div>
 </nav>
 <script>
-    document
-        .querySelector(".contact")
-        .addEventListener("click", () =>
-            window.scrollTo(0, document.body.scrollHeight),
-        );
+  document
+    .querySelector(".contact")
+    .addEventListener("click", () =>
+      window.scrollTo(0, document.body.scrollHeight)
+    );
 </script>

@@ -1,6 +1,7 @@
 ---
 import AboutMe from "../components/AboutMe.astro";
 import ContactAside from "../components/ContactAside.astro";
+import BlogSection from "../components/blog_section/BlogSection.astro";
 import MainProyects from "../components/main_projects/MainProyects.astro";
 import ProjectsSection from "../components/projects_section/ProjectsSection.astro";
 import Layout from "../layouts/Layout.astro";
@@ -9,7 +10,6 @@ const description = `Johan Lozano is a front-end developer and co-founder of Zal
 ---
 
 <Layout title="Johan Lozano" description={description}>
-	<AboutMe />
-	<MainProyects />
-	<ProjectsSection />
+	<BlogSection />
+	<ContactAside/>
 </Layout>

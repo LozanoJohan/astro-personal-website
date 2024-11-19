@@ -6,6 +6,10 @@ module.exports = {
 			'nexa': ['Nexa', 'sans-serif'],
 		},
 		extend: {
+			colors: {
+				'primary': '#9412da', 
+				'secondary': '#00488c',
+			},
 			backgroundImage: {
 				'instagram': "url('/src/icons/instagram.svg')",
 				'footer-texture': "url('/img/footer-texture.png')",
@@ -26,6 +30,7 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
+		require('tailwindcss-animated')
 		// ...
 	],
 }

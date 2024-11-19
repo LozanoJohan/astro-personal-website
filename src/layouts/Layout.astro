@@ -6,43 +6,92 @@ const { title, description, image, addons } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		{image && <meta property="og:image" content={image} />}
-		{image && <meta name="twitter:image" content={image} />}
-		<meta property="og:title" content={title} />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@JohanLo57983210" />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content={description} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    {image && <meta property="og:image" content={image} />}
+    {image && <meta name="twitter:image" content={image} />}
+    <meta property="og:title" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JohanLo57983210" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
 
-		<title>{title}</title>
-		<link
-			href="https://fonts.cdnfonts.com/css/nexa-bold"
-			rel="stylesheet"
-		/>
-		<style>
-			@import url("https://fonts.cdnfonts.com/css/nexa-bold");
-		</style>
-	</head>
-	<body
-		class="flex flex-col text-white font-mono h-full text-center overflow-x-hidden bg-black"
-	>
-		<Navbar />
-		<div class=`flex-grow ${addons}`>
-			<slot />
-		</div>
-		<Footer />
-	</body>
+    <title>{title}</title>
+    <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/nexa-bold");
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="flex flex-col text-white font-mono h-full text-center overflow-x-hidden bg-black"
+  >
+    <Navbar />
+    <div class=`flex-grow ${addons}`>
+      <slot />
+    </div>
+    <section class="py-16 px-4 bg-gradient-to-b from-transparent to-[#000810]">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Contacto</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-xl mb-10">
+        ¿Tienes una idea interesante? ¿Quieres colaborar en un proyecto? ¿O
+        simplemente quieres charlar sobre tecnología? No dudes en contactarme.
+      </p>
+      <a
+        href="mailto:lozanojohan321@gmail.com"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg text-xl
+        hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          ></path>
+        </svg>
+        Envíame un correo
+      </a>
+    </section>
+    <Footer />
+    <script
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"
+    ></script>
+  </body>
 </html>
 <style is:global>
-	h1,
-	h2,
-	h2 {
-		font-family: "Nexa", sans-serif;
-	}
+  h1,
+  h2,
+  h2 {
+    font-family: "Nexa", sans-serif;
+  }
+
+  /* Estilos para el scrollbar */
+  div::-webkit-scrollbar {
+    height: 16px; /* Altura del scrollbar horizontal */
+  }
+
+  div::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Color del fondo del track */
+    border-radius: 4px;
+  }
+
+  div::-webkit-scrollbar-thumb {
+    background: #4a4a4a; /* Color del thumb (la parte que se mueve) */
+    border-radius: 4px;
+  }
+
+  div::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al hover */
+  }
 </style>

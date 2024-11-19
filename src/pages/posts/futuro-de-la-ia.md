@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 'El futuro de la IA. Inteligencia General y Superinteligencia'
 pubDate: 2024-03-8
-description: 'Hay 2 puntos de inflexión grandes en cuanto a avances en la IA, la Inteligencia Artificial General (AGI) y la Superinteligecia Aritificial (ASI) ¿Qué significas? ¿Qué riesgos o befeficios conllevan?.'
+description: 'Hay 2 puntos de inflexión grandes en cuanto a avances en la IA, la Inteligencia Artificial General (AGI) y la Superinteligecia Aritificial (ASI) ¿Qué significan? ¿Qué riesgos o befeficios conllevan?.'
 preview: 'La IA ha tenido avances grandísimos, y esto no es algo que haya empezado hace 2 o 3 años, cada año desde 2012 las capacidades de la inteligencia artificial han aumentado drásticamente, en campos'
 image:
     url: '/images/blog/agi.jpg'

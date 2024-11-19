@@ -1,0 +1,16 @@
+---
+import TimelineItem from "./TimelineItem.astro";
+
+const { title, items } = Astro.props;
+---
+
+<div class="mb-32 relative">
+    <div class="flex items-center justify-center mb-8">
+        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full z-10 flex items-center justify-center text-base font-bold text-white shadow-lg hover:scale-110 transition-transform duration-200 border-2 border-purple-300/20">{title}</div>
+    </div>
+    <div class="space-y-8">
+        {items.map((item) => (
+            <TimelineItem {...item} />
+        ))}
+    </div>
+</div>
