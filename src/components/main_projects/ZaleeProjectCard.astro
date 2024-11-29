@@ -1,0 +1,28 @@
+---
+import Icon from "astro-icon";
+import ZaleeSearchBar from "./ZaleeSearchBar.astro";
+import ZaleeInfo from "./ZaleeInfo.astro";
+
+const {
+  title = "Untitled Project",
+  description = "No description available",
+  url = "#",
+  role = "Developer",
+  social = { github: "#" },
+  achievements = [
+    "+1000 usuarios activos mensuales",
+    "+150 eventos registrados",
+    "+90 clubes y bares conectados",
+    "+1000 entradas vendidas",
+  ],
+  gallery = ["/images/zalee.png", "/images/zalee.png", "/images/zalee.png"],
+} = Astro.props;
+---
+
+<div class="flex flex-col xl:flex-row overflow-hidden gap-8">
+  
+  <ZaleeInfo {...Astro.props} />
+   <ZaleeSearchBar />
+</div>
+
+

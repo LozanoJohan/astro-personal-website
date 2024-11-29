@@ -1,0 +1,99 @@
+---
+import Icon from "astro-icon";
+import FlipCard from "./FlipCard.astro";
+import Section from "./Section.astro";
+
+const cards = [
+  {
+    image: "/images/speaker.jpg",
+    title: "Emprendedor",
+    description: "Emprendedor",
+  },
+  { image: "/images/speaker2.jpg", title: "Speaker", description: "Speaker" },
+  {
+    image: "/images/developer.jpg",
+    title: "Desarrollador",
+    description: "Desarrollador",
+  },
+  {
+    image: "/images/student.jpg",
+    title: "Estudiante",
+    description: "Estudiante",
+  },
+  { image: "/images/yo.jpg", title: "Yo", description: "Yo" },
+];
+---
+<Section addons="flex flex-col items-center justify-around">
+  <div class="flex flex-col items-center py-24">
+    <h1
+      class="font-[1100] text-5xl/[1.1] lg:text-6xl/[1.1]
+                before:absolute before:-z-10 before:w-full before:top-[0px] before:h-[120vh] before:right-0"
+    >
+      Creemos el futuro juntos
+    </h1>
+    <p class="text-xl text-gray-300 max-w-3xl text-center mt-6 mb-12 font-light">
+      Soy Johan, un apasionado por la tecnología, la física y el emprendimiento. Mi misión es crear herramientas que impulsen el potencial humano y expandir las fronteras del conocimiento.
+    </p>
+    <div class="flex flex-wrap items-center justify-center mt-6 gap-4">
+      <div class="bg-gradient-to-r from-secondary to-[#ff5c2e] hover:scale-110 transition-all rounded-full">
+        <div
+          class="flex justify-center items-center gap-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] px-3 m-[3px] w-56 rounded-full"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white animate-fade" 
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-width="0.5"
+          >
+            <path d="M18.944 11.112C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888zM13 14v3h-2v-3H8l4-5 4 5h-3z"/>
+          </svg>
+          <span class="text-sm sm:text-base">Crear aplicación</span>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-[#ff5c2e] to-[#ff4d5c] hover:scale-110 transition-all rounded-full">
+        <div
+          class="flex justify-center items-center gap-3 px-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
+        >
+          <Icon 
+            name="mdi:web" 
+            class="h-6 w-6 text-white"
+            stroke="currentColor"
+            stroke-width="0.5"
+          />
+          <span class="text-sm sm:text-base">Crear página web</span>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-[#ff4d5c] to-primary hover:scale-110 transition-all rounded-full">
+        <div
+          class="flex justify-center items-center gap-3 px-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
+        >
+          <Icon 
+            name="mdi:robot" 
+            class="h-6 w-6 text-white animate-fade"
+            stroke="currentColor" 
+            stroke-width="0.5"
+          />
+          <span class="text-sm sm:text-base">Crear solución con IA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex overflow-x-scroll overflow-y-hidden gap-8 w-full pt-8">
+    {cards.map((card) => <FlipCard info={card} />)}
+  </div>
+</Section>
+<style>
+  h1::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      radial-gradient(circle at 20% 80%, #1a0033 10%, transparent 50%),
+      radial-gradient(circle at 20% 50%, #330033 10%, transparent 50%), 
+      radial-gradient(circle at 50% 50%, #1a001a 10%, transparent 50%),
+      radial-gradient(circle at 80% 20%, #2b0033 5%, transparent 50%),
+      radial-gradient(circle at 80% 80%, #000033 10%, transparent 50%),
+      radial-gradient(circle at 40% 20%, #1a0044 10%, transparent 100%);
+
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+  }
+</style>

@@ -7,8 +7,8 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				'primary': '#9412da', 
-				'secondary': '#00488c',
+				'primary': '#ff2d94', 
+				'secondary': '#ff6b00',
 			},
 			backgroundImage: {
 				'instagram': "url('/src/icons/instagram.svg')",

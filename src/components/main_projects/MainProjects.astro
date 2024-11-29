@@ -1,0 +1,135 @@
+---
+import Icon from "astro-icon";
+import Section from "../Section.astro";
+import ZaleeProjectCard from "./ZaleeProjectCard.astro";
+import VenyaPojectCard from "./VenyaPojectCard.astro";
+import Galery from "./Galery.astro";
+
+const projects = [
+  {
+    title: "Arkania",
+    icon: "ph:robot-bold",
+    description:
+      "Arkania es una inteligencia artificial que automatiza un 90% de las conversaciones por chat de tu negocio.",
+    image: "/images/arkania.webp",
+    url: "https://arkania.com",
+    role: "Co-Founder",
+    social: {
+      linkedin: "https://www.linkedin.com/in/arkania",
+      twitter: "https://x.com/arkania",
+    },
+  },
+  {
+    title: "Zalee",
+    icon: "mdi:party-popper",
+    description:
+      "Descubre y obtén beneficios exclusivos en los mejores clubs nocturnos y fiestas de Bogotá.",
+    url: "https://zaleeapp.com",
+    role: "CPO & Co-Founder",
+    social: {
+      linkedin: "https://co.linkedin.com/company/zaleeapp",
+      instagram: "https://www.instagram.com/zaleeapp",
+      facebook: "https://www.facebook.com/zaleeapp",
+    },
+    gallery: [
+      "/images/zalee.png",
+      "/images/products.png",
+      "/images/events.jpg",
+      "/images/zalee.png",
+      "/images/zalee.png",
+      "/images/discos.jpg",
+    ],
+  },
+];
+---
+
+<div>
+  <Section
+    title="Proyectos principales"
+    description="Mi forma de contribuir al mundo"
+  >
+    <div>
+      <div class="flex flex-wrap gap-4 text-sm font-medium text-gray-400 mb-8 justify-center">
+        {
+          projects.map((project, i) => (
+            <div
+              class={` hover:bg-primary hover:scale-[1.03] transition-all rounded-full ${i === 1 ? "bg-gradient-to-r from-blue-600 to-teal-400" : "bg-gradient-to-r from-primary to-purple-600"}`}
+            >
+              <div class=" m-[3px]">
+                <div
+                  id={`project-${i}`}
+                  class="transition-all cursor-pointer bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] rounded-full inline-flex justify-center text-center text-sm sm:text-base font-semibold items-center gap-1 px-6 py-1 text-white w-full "
+                  aria-current="page"
+                  onclick={`
+                    event.preventDefault();
+                    const projectCards = document.querySelectorAll('[id^="project-card-"]');
+                    projectCards.forEach(card => {
+                      card.style.display = 'none';
+                      card.style.opacity = '0';
+                    });
+                    const selectedCard = document.getElementById('project-card-${i}');
+                    selectedCard.style.display = 'block';
+                    setTimeout(() => {
+                      selectedCard.style.opacity = '1';
+                    }, 50);
+                    
+                    const projectTabs = document.querySelectorAll('[id^="project-"]');
+                    projectTabs.forEach(tab => {
+                      tab.classList.remove('active');
+                      tab.classList.add('bg-gradient-to-r')
+                    });
+                    this.classList.add('active');
+                    this.classList.remove('bg-gradient-to-r');
+                  `}
+                >
+                  <div class="flex items-center gap-6">
+                      <Icon name={project.icon} class="w-6 h-6" />
+                    <span class="text-white text-sm sm:text-lg font-bold">
+                      {project.title}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </Section>
+  <Section addons="relative">
+    <div class="background-ellipse -z-10 overflow-y-auto"></div>
+    <div>
+      {
+        projects.map((project, i) => (
+          <div
+            id={`project-card-${i}`}
+            style={`display: ${i === 0 ? "block" : "none"}; opacity: ${i === 0 ? "1" : "0"};`}
+            class="transition-all duration-300  "
+          >
+            {project.title === "Zalee" && <ZaleeProjectCard {...project} />}
+            {project.title === "Venya" && <VenyaPojectCard {...project} />}
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+  <Section>
+    <Galery images={projects[1].gallery} />
+  </Section>
+</div>
+<style>
+  .background-ellipse {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(37, 99, 235, 0.3) 0%,
+      transparent 70%
+    );
+    backdrop-filter: blur(4px);
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+</style>

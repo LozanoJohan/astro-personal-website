@@ -2,26 +2,31 @@
 import jl from "../../icons/jl_big.svg";
 import Icon from "astro-icon";
 import { Image } from "astro:assets";
+import ContactIcons from "./ContactIcons.astro";
 ---
 
 <nav class="relative w-full z-50">
   <div class="absolute w-full">
-    <div class="fixed top-0 w-full backdrop-blur-xl bg-black/10">
+    <div class="fixed top-0 w-full backdrop-blur-xl bg-black/30">
       <div
         class="w-full max-w-screen-xl flex flex-col md:flex-row justify-between items-center mx-auto sticky top-0 text-white h-auto md:h-20 py-5 md:py-10 px-5"
       >
         <div class="w-full md:w-auto flex items-center justify-between">
           <div class="flex items-center gap-4">
-            <a href="/"><Image src={jl} width={40} alt="Un logo increíble" /></a>
-            <a href="/" class="text-xl md:text-2xl font-semibold">Johan Lozano</a>
+            <a href="/" class="text-xl md:text-2xl font-semibold"
+              >Johan Lozano</a
+            >
           </div>
-          
+
           <button id="menu-toggle" class="md:hidden text-white">
             <Icon name="ph:list-bold" size={30} />
           </button>
         </div>
-        
-        <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 text-center w-full md:w-auto items-center">
+
+        <ul
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 text-center w-full md:w-auto items-center"
+        >
           <li
             class="text-lg md:text-xl text-gray-300 hover:text-gray-400 transition-all cursor-pointer"
           >
@@ -37,29 +42,12 @@ import { Image } from "astro:assets";
           >
             <a href="/blog">Blog</a>
           </li>
-          <div class="flex gap-4 md:hidden">
-            <a href="https://www.instagram.com/johanlozanol/" target="_blank">   
-                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={25} name="ph:instagram-logo-duotone" />
-            </a>
-            <a href="https://www.linkedin.com/in/johanlozanol/" target="_blank">
-                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={25} name="ph:linkedin-logo-duotone" />
-            </a>
-            <a href="https://github.com/LozanoJohan" target="_blank">
-                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={25} name="ph:github-logo-duotone" />
-            </a>
+          <div class="block md:hidden">
+            <ContactIcons />
           </div>
         </ul>
-
-        <div class="hidden md:flex gap-4">
-            <a href="https://www.instagram.com/johanlozanol/" target="_blank">   
-                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={25} name="ph:instagram-logo-duotone" />
-            </a>
-            <a href="https://www.linkedin.com/in/johanlozanol/" target="_blank">
-                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={25} name="ph:linkedin-logo-duotone" />
-            </a>
-            <a href="https://github.com/LozanoJohan" target="_blank">
-                <Icon class="text-gray-300 hover:text-gray-400 transition-all cursor-pointer" size={25} name="ph:github-logo-duotone" />
-            </a>
+        <div class="hidden md:block">
+          <ContactIcons />
         </div>
       </div>
     </div>
@@ -67,11 +55,11 @@ import { Image } from "astro:assets";
 </nav>
 
 <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-  menuToggle?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
-    menu?.classList.toggle('flex');
+  menuToggle?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+    menu?.classList.toggle("flex");
   });
 </script>
