@@ -7,17 +7,22 @@ import Galery from "./Galery.astro";
 
 const projects = [
   {
-    title: "Arkania",
+    title: "Venya",
     icon: "ph:robot-bold",
     description:
-      "Arkania es una inteligencia artificial que automatiza un 90% de las conversaciones por chat de tu negocio.",
+      "Venya es una inteligencia artificial que automatiza un 90% de las conversaciones por chat de tu negocio.",
     image: "/images/arkania.webp",
-    url: "https://arkania.com",
+    url: "https://arkania.vercel.app",
     role: "Co-Founder",
     social: {
       linkedin: "https://www.linkedin.com/in/arkania",
       twitter: "https://x.com/arkania",
     },
+    gallery: [
+      "/images/projects/venya/venya.png",
+      "/images/projects/venya/landing.png",
+      "/images/projects/venya/integraciones.png",
+    ],
   },
   {
     title: "Zalee",
@@ -32,18 +37,16 @@ const projects = [
       facebook: "https://www.facebook.com/zaleeapp",
     },
     gallery: [
-      "/images/zalee.png",
-      "/images/products.png",
-      "/images/events.jpg",
-      "/images/zalee.png",
-      "/images/zalee.png",
-      "/images/discos.jpg",
+      "/images/projects/zalee/event.png",
+      "/images/projects/zalee/disco.png",
+      "/images/projects/zalee/event.png",
+
     ],
   },
 ];
 ---
 
-<div>
+<div class="mt-32">
   <Section
     title="Proyectos principales"
     description="Mi forma de contribuir al mundo"
@@ -58,7 +61,7 @@ const projects = [
               <div class=" m-[3px]">
                 <div
                   id={`project-${i}`}
-                  class="transition-all cursor-pointer bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] rounded-full inline-flex justify-center text-center text-sm sm:text-base font-semibold items-center gap-1 px-6 py-1 text-white w-full "
+                  class="transition-all button cursor-pointer bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] rounded-full inline-flex justify-center text-center text-sm sm:text-base font-semibold items-center gap-1 px-6 py-1 text-white w-full "
                   aria-current="page"
                   onclick={`
                     event.preventDefault();
@@ -80,6 +83,24 @@ const projects = [
                     });
                     this.classList.add('active');
                     this.classList.remove('bg-gradient-to-r');
+
+                    const backgroundEllipse = document.querySelector('.background-ellipse');
+                    if (backgroundEllipse) {
+                      backgroundEllipse.classList.remove('zalee-div', 'venya-div');
+                      const newClass = '${project.title.toLowerCase()}-div';
+                      backgroundEllipse.classList.add(newClass);
+                      backgroundEllipse.style.transition = 'all 0.5s ease-in-out';
+                    }
+                    
+                    const otherGalleries = document.querySelectorAll('[id^="project-gallery-"]');
+                    otherGalleries.forEach(gallery => {
+                      gallery.classList.add('hidden');
+                      gallery.classList.remove('block');
+                    });
+
+                    const currentGallery = document.getElementById('project-gallery-${i}');
+                    currentGallery.classList.remove('hidden');
+                    currentGallery.classList.add('block');
                   `}
                 >
                   <div class="flex items-center gap-6">
@@ -97,7 +118,7 @@ const projects = [
     </div>
   </Section>
   <Section addons="relative">
-    <div class="background-ellipse -z-10 overflow-y-auto"></div>
+    <div class={`background-ellipse -z-10 venya-div`}></div>
     <div>
       {
         projects.map((project, i) => (
@@ -114,7 +135,14 @@ const projects = [
     </div>
   </Section>
   <Section>
-    <Galery images={projects[1].gallery} />
+    {projects.map((project, i) => (
+      <div
+        id={`project-gallery-${i}`} 
+        class="hidden transition-all duration-300"
+      >
+        <Galery images={project.gallery} />
+      </div>
+    ))}
   </Section>
 </div>
 <style>
@@ -124,12 +152,21 @@ const projects = [
     left: 60%;
     width: 300%;
     height: 300%;
+    backdrop-filter: blur(4px);
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  .zalee-div {
     background: radial-gradient(
       ellipse at center,
       rgba(37, 99, 235, 0.3) 0%,
       transparent 70%
     );
-    backdrop-filter: blur(4px);
-    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  .venya-div {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(109, 40, 217, 0.3) 0%,
+      transparent 70%
+    );
   }
 </style>

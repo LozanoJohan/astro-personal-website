@@ -36,7 +36,7 @@ const { title, description, image, addons } = Astro.props;
     class="flex flex-col text-white font-mono h-full text-center overflow-x-hidden bg-black"
   >
     <Navbar />
-    <div class=`flex-grow ${addons}`>
+    <div class=`flex-grow overflow-x-hidden ${addons}`>
       <slot />
     </div>
     <section class="py-16 px-4 bg-gradient-to-b from-transparent to-[#000810]">
@@ -47,7 +47,7 @@ const { title, description, image, addons } = Astro.props;
       </p>
       <a
         href="https://wa.me/573142968931"
-        class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-xl
+        class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r rounded-full from-purple-600 to-blue-600 text-xl
         hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
       >
         <Icon name="ph:whatsapp-logo-duotone" size={24} />
@@ -67,6 +67,9 @@ const { title, description, image, addons } = Astro.props;
     font-family: "Nexa", sans-serif;
   }
 
+  body {
+    overflow-x: hidden;
+  }
   /* Estilos para el scrollbar */
   div::-webkit-scrollbar {
     height: 16px; /* Altura del scrollbar horizontal */

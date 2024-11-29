@@ -2,19 +2,19 @@
 const { info } = Astro.props;
 ---
 
-<div class="card w-64 relative sm:w-96 h-96 sm:h-96 flex-shrink-0 my-10 text-center text-white font-bold">
+<div class="card relative w-80 h-80 flex-shrink-0 my-10 text-center text-white font-bold rounded-xl">
   <div
-    class="card__content transition-transform duration-1000 sm:w-96 h-96 sm:h-96 w-64 "
+    class="card__content transition-transform duration-1000 w-80 h-80"
   >
     <img
-      class="object-cover h-full w-full absolute top-0 right-0 blur-xl"
+      class="object-cover h-full w-full absolute top-0 right-0 blur-xl rounded-xl"
       src={info.image}
       alt="a happy person"
     />
-    <div class="relative w-full h-full">
+    <div class="relative w-full h-full rounded-xl">
       <img
         loading="eager"
-        class="object-cover h-full w-full absolute top-0 right-0 card__front bottom-0 left-0"
+        class="object-cover h-full w-full absolute top-0 right-0 card__front bottom-0 left-0 rounded-xl"
         src={info.image}
         alt="a happy person"
       />
@@ -27,7 +27,7 @@ const { info } = Astro.props;
       </div>
     </div>
     <div
-      class="card__back absolute top-0 bottom-0 right-0 left-0 p-8 bg-teal-500 flex flex-col gap-4 items-center justify-center"
+      class="card__back absolute rounded-xl top-0 bottom-0 right-0 left-0 p-8 bg-teal-500 flex flex-col gap-4 items-center justify-center"
     >
       <h3 class="text-2xl font-bold">¡Hola! 👋</h3>
       <p class="text-lg">

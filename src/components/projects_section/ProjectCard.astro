@@ -7,17 +7,21 @@ const { title, img, description, link, github, technologies } = Astro.props;
 ---
 
 <article
-    class="bg-[#000810] animate-fade-up h-full relative flex flex-col justify-between overflow-ellipsis w-full shadow-2xl shadow-black hover:scale-[1.03] transition-all"
+    class="bg-[#000810] animate-fade-up rounded-lg h-full relative flex flex-col justify-between overflow-ellipsis w-full shadow-2xl shadow-black hover:scale-[1.03] transition-all"
 >
     <a href={link} class="h-full">
-        <Image width={350} height={200} format="avif" src={img} alt={title} class="h-48 w-full object-cover" />
+        <Image
+            width={350}
+            height={200}
+            format="avif"
+            src={img}
+            alt={title}
+            class="h-48 w-full object-cover rounded-t-lg"
+        />
         <header class="p-4 text-left">
             <h3 class="text-2xl font-semibold">{title}</h3>
             <p class="text-gray-400 font-normal py-2">{description}</p>
         </header>
-        <div class="flex flex-wrap justify-center px-4 pb-4">
-            {technologies.map((tech) => <Tech tech={tech} color="slate"/>)}
-        </div>
     </a>
     {
         github && (

@@ -2,41 +2,14 @@
 const { images } = Astro.props;
 ---
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-  <div class="grid gap-4">
-    {
-      images.slice(0, 2).map((image) => (
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src={image} alt="" />
-        </div>
-      ))
-    }
-  </div>
-  <div class="grid gap-4">
-    {
-      images.slice(2, 4).map((image) => (
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src={image} alt="" />
-        </div>
-      ))
-    }
-  </div>
-  <div class="grid gap-4">
-    {
-      images.slice(4, 6).map((image) => (
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src={image} alt="" />
-        </div>
-      ))
-    }
-  </div>
-  <div class="grid gap-4">
-    {
-      images.slice(6, 8).map((image) => (
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src={image} alt="" />
-        </div>
-      ))
-    }
-  </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  {
+    images.map((image) => (
+        <img
+          class="rounded-lg inset-0 w-full h-full object-cover object-top"
+          src={image}
+          alt="Imagen de galería"
+        />
+    ))
+  }
 </div>

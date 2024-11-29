@@ -25,7 +25,7 @@
     {
         "title": "MyLearnCoach",
         "img": "https://user-images.githubusercontent.com/108693709/248160788-c4424823-ee6b-4c0b-b0f7-08ad33c34250.png",
-        "description": "Un chatbot con IA para aprender más rápido, también un buscador de cursos gratuitos de Coursera de la UNAL.",
+        "description": "Buscador de cursos con IA de Coursera de la UNAL.",
         "github": "https://github.com/LozanoJohan/MyLearnCoach",
         "link": "https://github.com/LozanoJohan/MyLearnCoach",
         "technologies": [
