@@ -1,4 +1,5 @@
 ---
+import Icon from "astro-icon";
 import AboutMe from "../components/AboutMe.astro";
 import ContactAside from "../components/ContactAside.astro";
 import MainProjects from "../components/main_projects/MainProjects.astro";
@@ -10,7 +11,35 @@ const description = `Johan Lozano is a front-end developer and co-founder of Zal
 ---
 
 <Layout title="Johan Lozano" description={description}>
-	<ProfesionalPresentation />
-	<MainProjects />
-	<ProjectsSection />
+  <ProfesionalPresentation />
+  <MainProjects />
+  <div
+    class="relative
+  before:absolute before:-z-10 before:top-0 before:left-0 before:w-screen before:h-full
+  w-screen"
+  >
+    <ProjectsSection />
+    <section class="py-16 px-4 bg-gradient-to-b from-transparent to-[#000810] flex flex-col items-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Contacto</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-xl mb-10">
+        ¿Tienes una idea interesante? ¿Quieres colaborar en un proyecto? ¿O
+        simplemente quieres charlar sobre tecnología? No dudes en contactarme.
+      </p>
+      <div
+        class="bg-gradient-to-r from-purple-500 to-blue-500 hover:scale-110 transition-all rounded-full"
+      >
+        <div
+          class="flex justify-center items-center gap-3 px-3 py-4 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
+        >
+          <Icon name="ph:whatsapp-logo-duotone" size={24} />
+
+          <a href="https://wa.me/573142968931" target="_blank">
+            <span class="text-md font-semibold"> Envíame un mensaje </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
 </Layout>
+
+<style></style>

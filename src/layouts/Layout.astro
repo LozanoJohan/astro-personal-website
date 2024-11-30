@@ -33,27 +33,12 @@ const { title, description, image, addons } = Astro.props;
     />
   </head>
   <body
-    class="flex flex-col text-white font-mono h-full text-center overflow-x-hidden bg-black"
+    class="flex flex-col text-white font-mono h-full text-center overflow-x-hidden bg-gray-950"
   >
     <Navbar />
     <div class=`flex-grow overflow-x-hidden ${addons}`>
       <slot />
     </div>
-    <section class="py-16 px-4 bg-gradient-to-b from-transparent to-[#000810]">
-      <h2 class="text-5xl md:text-6xl font-bold mb-6">Contacto</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto text-xl mb-10">
-        ¿Tienes una idea interesante? ¿Quieres colaborar en un proyecto? ¿O
-        simplemente quieres charlar sobre tecnología? No dudes en contactarme.
-      </p>
-      <a
-        href="https://wa.me/573142968931"
-        class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r rounded-full from-purple-600 to-blue-600 text-xl
-        hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
-      >
-        <Icon name="ph:whatsapp-logo-duotone" size={24} />
-        Envíame un mensaje
-      </a>
-    </section>
     <Footer />
     <script
       src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"

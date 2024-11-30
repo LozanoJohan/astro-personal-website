@@ -5,51 +5,22 @@ import projects from "../../projects.json";
 ---
 
 <Section title="Otros proyectos" addons="mt-32">
-    <div
-        class="relative grid auto-rows-min sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 mb-10 
-            before:absolute before:-z-10 before:top-10 before:w-screen before:h-full before:-right-5
-            after:absolute after:-z-10 after:top-10 after:w-screen after:h-full after:-right-5"
-    >
-        {
-            projects.map((project) => (
-                <ProjectCard
-                    title={project.title}
-                    img={project.img}
-                    description={project.description}
-                    technologies={project.technologies}
-                    github={project.github}
-                    link={project.link}
-                />
-            ))
-        }
-    </div>
+  <div
+    class="grid auto-rows-min sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 mb-10"
+  >
+    {
+      projects.map((project) => (
+        <div class="hover:scale-[1.03] transition-all">
+          <ProjectCard
+            title={project.title}
+            img={project.img}
+            description={project.description}
+            technologies={project.technologies}
+            github={project.github}
+            link={project.link}
+          />
+        </div>
+      ))
+    }
+  </div>
 </Section>
-
-<style>
-    div::before {
-        background: radial-gradient(
-                rgba(0, 41, 108, 0.423),
-                rgba(0, 0, 0, 0.9) 90%
-            ),
-            radial-gradient(
-                circle at 90%,
-                #9412da 50%,
-                #00488c 75%,
-                #000 80%
-            );
-        -webkit-mask-image: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(0, 0, 0, 1) 30%,
-            rgba(0, 0, 0, 1) 50%,
-            rgba(0, 0, 0, 1) 70%,
-        );
-    }
-    div::after {
-        background: linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0) 0%,
-            rgb(0, 0, 0) 100%
-        );
-    }
-</style>

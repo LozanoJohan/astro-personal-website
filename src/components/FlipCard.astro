@@ -27,20 +27,12 @@ const { info } = Astro.props;
       </div>
     </div>
     <div
-      class="card__back absolute rounded-xl top-0 bottom-0 right-0 left-0 p-8 bg-teal-500 flex flex-col gap-4 items-center justify-center"
+      class=`card__back absolute rounded-xl top-0 bottom-0 right-0 left-0 p-8 ${info.color} flex flex-col gap-4 items-center justify-center`
     >
-      <h3 class="text-2xl font-bold">¡Hola! 👋</h3>
+      <h3 class="text-2xl font-bold">{info.title}</h3>
       <p class="text-lg">
-        Soy Johan, un apasionado por la tecnología y la innovación. Me encanta compartir conocimiento y crear soluciones que impacten positivamente.
+        {info.description}
       </p>
-      <div class="flex gap-2">
-        <a href="https://github.com" target="_blank" class="bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-opacity-90">
-          GitHub
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-opacity-90">
-          LinkedIn
-        </a>
-      </div>
     </div>
   </div>
 </div>

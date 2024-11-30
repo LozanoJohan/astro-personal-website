@@ -6,7 +6,7 @@ const { images } = Astro.props;
   {
     images.map((image) => (
         <img
-          class="rounded-lg inset-0 w-full h-full object-cover object-top"
+          class="rounded-lg border-gray-800 border inset-0 w-full h-full object-cover object-top shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:scale-[1.03] transition-all"
           src={image}
           alt="Imagen de galería"
         />
