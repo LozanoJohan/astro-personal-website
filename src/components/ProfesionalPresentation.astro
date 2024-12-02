@@ -2,45 +2,6 @@
 import Icon from "astro-icon";
 import FlipCard from "./FlipCard.astro";
 import Section from "./Section.astro";
-
-const cards = [
-  {
-    image: "/images/speaker.jpg",
-    title: "Emprendedor", 
-    description:
-      "Creo soluciones de software para ayudar a las personas a resolver problemas y mejorar su vida.",
-    color:
-      "bg-gradient-to-r from-red-600 to-pink-500 hover:scale-110 transition-all rounded-full",
-  },
-  {
-    image: "/images/speaker2.jpg",
-    title: "Speaker",
-    description: "Me gusta compartir mi conocimiento en ciencia y tecnología.",
-    color: 
-      "bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-110 transition-all rounded-full",
-  },
-  {
-    image: "/images/developer.jpg",
-    title: "Desarrollador",
-    description: "Me encanta programar, sobre todo en Python, JS y Dart.",
-    color:
-      "bg-gradient-to-r from-green-400 to-emerald-500 hover:scale-110 transition-all rounded-full",
-  },
-  {
-    image: "/images/student.jpg",
-    title: "Estudiante", 
-    description: "Estudio ingeniería de sistemas y física en la UNAL.",
-    color:
-      "bg-gradient-to-r from-orange-500 to-amber-500 hover:scale-110 transition-all rounded-full",
-  },
-  {
-    image: "/images/yo.jpg",
-    title: "Yo",
-    description: "¿Que esperas para charlar un rato? Escríbeme ;)",
-    color:
-      "bg-gradient-to-r from-red-500 to-rose-500 hover:scale-110 transition-all rounded-full",
-  },
-];
 ---
 
 <Section addons="flex flex-col items-center justify-around">
@@ -64,10 +25,11 @@ const cards = [
       ¿Como puedo ayudarte?
     </p>
     <div class="flex flex-wrap items-center justify-center mt-6 gap-4">
+      
       <div
         class="bg-gradient-to-r from-secondary to-[#ff5c2e] hover:scale-110 transition-all rounded-full"
       >
-        <div
+        <a href="https://api.whatsapp.com/send?phone=573142968931&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios%20de%20aplicaciones" target="_blank"
           class="flex justify-center items-center gap-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] px-3 m-[3px] w-56 rounded-full"
         >
           <svg
@@ -82,15 +44,13 @@ const cards = [
               d="M18.944 11.112C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888zM13 14v3h-2v-3H8l4-5 4 5h-3z"
             ></path>
           </svg>
-          <a href="https://wa.me/573142968931" target="_blank">
-            <span class="text-sm sm:text-base">Crear aplicación</span>
-          </a>
-        </div>
+          <span class="text-sm sm:text-base">Aplicaciónes</span>
+        </a>
       </div>
       <div
         class="bg-gradient-to-r from-[#ff5c2e] to-[#ff4d5c] hover:scale-110 transition-all rounded-full"
       >
-        <div
+        <a href="https://api.whatsapp.com/send?phone=573142968931&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios%20de%20p%C3%A1ginas%20web" target="_blank"
           class="flex justify-center items-center gap-3 px-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
         >
           <Icon
@@ -99,15 +59,13 @@ const cards = [
             stroke="currentColor"
             stroke-width="0.5"
           />
-          <a href="https://wa.me/573142968931" target="_blank">
-            <span class="text-sm sm:text-base">Crear página web</span>
-          </a>
-        </div>
+          <span class="text-sm sm:text-base">Páginas web</span>
+        </a>
       </div>
       <div
         class="bg-gradient-to-r from-[#ff4d5c] to-primary hover:scale-110 transition-all rounded-full"
       >
-        <div
+        <a href="https://api.whatsapp.com/send?phone=573142968931&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios%20de%20IA" target="_blank"
           class="flex justify-center items-center gap-3 px-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
         >
           <Icon
@@ -116,15 +74,10 @@ const cards = [
             stroke="currentColor"
             stroke-width="0.5"
           />
-          <a href="https://wa.me/573142968931" target="_blank">
-            <span class="text-sm sm:text-base">Crear solución con IA</span>
-          </a>
-        </div>
+          <span class="text-sm sm:text-base">IA</span>
+        </a>
       </div>
     </div>
-  </div>
-  <div class="flex overflow-x-scroll overflow-y-hidden gap-8 w-full pt-8">
-    {cards.map((card) => <FlipCard info={card} />)}
   </div>
 </Section>
 <style>
