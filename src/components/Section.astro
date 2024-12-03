@@ -1,21 +1,21 @@
 ---
-const { addons, title, id, description } = Astro.props;
+const { addons, title, id, description, titleMargin } = Astro.props;
 ---
 
 <section
   id={id}
   class=`sm:px-12 md:px-24 lg:px-32 px-5 font-bold min-h-min mx-auto ${addons}`
 >
-  <div class="my-12 sm:my-16 ">
+  <div class={`${titleMargin ?? "my-12 sm:my-16"}`}>
     {
       title && (
-        <h2 class="text-5xl/[1.1] lg:text-6xl/[1.1]">{title}</h2>
+        <h2 class="text-4xl/[1.1] lg:text-4xl/[1.1] font-extrabold">{title}</h2>
       )
     }
     {
       description && (
         <div class="mx-auto max-w-screen-sm text-center">
-          <p class="font-light text-xl sm:text-2xl text-gray-400">
+          <p class="font-light text-xl text-gray-400">
             {description}
           </p>
         </div>
