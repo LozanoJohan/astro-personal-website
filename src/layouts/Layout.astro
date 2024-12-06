@@ -6,20 +6,30 @@ const { title, description, image, addons } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Johan Lozano" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="keywords" content="Johan Lozano, desarrollo web, programación, tecnología, blockchain, IA" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:site_name" content="Johan Lozano" />
+    <meta property="og:description" content={description} />
     {image && <meta property="og:image" content={image} />}
     {image && <meta name="twitter:image" content={image} />}
     <meta property="og:title" content={title} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@JohanLo57983210" />
+    <meta name="twitter:creator" content="@JohanLo57983210" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <link rel="canonical" href={Astro.url} />
 
     <title>{title}</title>
     <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet" />

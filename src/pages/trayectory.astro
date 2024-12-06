@@ -8,41 +8,68 @@ const description =
 
 const timeline = [
   {
+    title: "Primer proyecto de programación",
+    date: "Febrero - Junio 2022",
+    description:
+      "Creo 'AstronautTap' un juego educativo para niños usando Unity y C#.",
+  },
+  {
+    title: "Carrera de Ingeniería de Sistemas",
+    date: "Junio 2022 - Actualidad",
+    description: "Ingreso a la carrera de Ingeniería de Sistemas en la Universidad Nacional de Colombia.",
+  },
+  {
     title: "Co-fundador Zalee",
-    date: "Julio 2023",
+    date: "Febrero 2023",
     description:
-      "Fundación de empresa de desarrollo de software. Gestión de proyectos y equipo de desarrollo.",
-  },
-  {
-    title: "Desarrollo de MyLearnCoach",
-    date: "Marzo 2023",
-    description:
-      "Creación de chatbot educativo con IA y buscador de cursos de la UNAL.",
-  },
-  {
-    title: "Desarrollo de AstronautTap 2",
-    date: "Octubre 2022",
-    description: "Creación de juego educativo para niños usando Unity y C#.",
+      "Fundación de mi primera empresa.",
   },
   {
     title: "Primer Contacto con la Programación",
-    date: "Febrero 2021",
-    description: "Aprendizaje de Python y fundamentos de programación.",
+    date: "Febrero 2022",
+    description: "Hago un diplomado intensivo de programación en el MinTIC.",
+  },
+  {
+    title: "Gano múltiples premios en hackathons",
+    date: "2023 - 2024",
+    description: "Mi participación en hackathons me hace reconocido en la comunidad.",
+  },
+  {
+    title: "Mi primer contrato con el MinTIC",
+    date: "Junio 2024",
+    description: "Logro realizar un chatbot con IA para un evento del MinTIC.",
+  },
+  {
+    title: "Speaker en TuringBox - Nodo Blockchain",
+    date: "Febrero - Junio 2023",
+    description: "Expongo sobre la importancia de la IA y blockchain en múltiples universidades.",
+  },
+  {
+    title: "Fellow en Makers Fellowship",
+    date: "Febrero - Junio 2023",
+    description: "Entro a la incubadora de talento de Andres Bilbao, co-fundador de Rappi.",
+  },
+  {
+    title: "Participación en grupos estudiantiles",
+    date: "2022 - 2024",
+    description: "Lidero grupos como Computer Society con talleres y proyectos de programación.",
   },
 ];
 ---
 
 <Layout title="Trayectoria | Johan Lozano" description={description}>
   <section class="py-24 px-4 max-w-4xl mx-auto">
-    <h2 class="text-5xl md:text-6xl font-bold mb-16">Mi Trayectoria</h2>
-
     <div class="relative">
       <!-- Línea vertical central -->
       <div
         class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-purple-500 to-blue-500"
       >
       </div>
-
+      <TimelineSection
+        title="2024"
+        items={timeline.filter((item) => item.date.includes("2024"))}
+      />
+      
       <TimelineSection
         title="2023"
         items={timeline.filter((item) => item.date.includes("2023"))}
