@@ -4,30 +4,30 @@ import FlipCard from "./FlipCard.astro";
 import Section from "./Section.astro";
 ---
 
-<Section addons="flex flex-col items-center justify-around">
-  <div class="flex flex-col items-center py-24">
+<Section addons="flex flex-col items-center justify-around relative overflow-hidden">
+  <div class="hero-background"></div>
+  <div class="flex flex-col items-center py-24 relative z-10">
     <h1
-      class="font-[1100] text-5xl/[1.1] lg:text-6xl/[1.1]
-                before:absolute before:-z-10 before:w-full before:top-[0px] before:h-[120vh] before:right-0"
+      class="font-[1100] text-5xl/[1.1] lg:text-6xl/[1.1] relative"
     >
-      Creemos el futuro juntos
+      Creando el futuro con Agentes de IA
     </h1>
     <p
       class="text-xl text-gray-300 max-w-3xl text-center mt-6 mb-12 font-light"
     >
-      Soy Johan, un apasionado por la tecnología, la física y el emprendimiento.
-      Mi misión es crear herramientas que impulsen el potencial humano y
-      expandir las fronteras del conocimiento.
+      Soy Johan, especialista en desarrollo de agentes de inteligencia artificial.
+      Me dedico a crear sistemas autónomos inteligentes que potencian las capacidades
+      humanas y resuelven problemas complejos de forma eficiente.
     </p>
     <p class="text-xl text-gray-300 max-w-3xl text-center mt-2 font-light">
-      ¿Como puedo ayudarte?
+      ¿Cómo puedo ayudarte con agentes de IA?
     </p>
     <div class="flex flex-wrap items-center justify-center mt-6 gap-4">
       <div
         class="bg-gradient-to-r from-secondary to-[#ff5c2e] hover:scale-110 transition-all rounded-full"
       >
         <a
-          href="https://api.whatsapp.com/send?phone=573142968931&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios%20de%20aplicaciones"
+          href="/cv-johan-lozano.pdf"
           target="_blank"
           class="flex justify-center items-center gap-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] px-3 m-[3px] w-56 rounded-full"
         >
@@ -43,55 +43,83 @@ import Section from "./Section.astro";
               d="M18.944 11.112C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888zM13 14v3h-2v-3H8l4-5 4 5h-3z"
             ></path>
           </svg>
-          <span class="text-sm sm:text-base">Aplicaciones</span>
+          <span class="text-sm sm:text-base">Descargar CV</span>
         </a>
       </div>
       <div
-        class="bg-gradient-to-r from-[#ff5c2e] to-[#ff4d5c] hover:scale-110 transition-all rounded-full"
+        class="bg-gradient-to-r from-[#ff5c2e] to-primary hover:scale-110 transition-all rounded-full"
       >
         <a
-          href="https://api.whatsapp.com/send?phone=573142968931&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios%20de%20p%C3%A1ginas%20web"
+          href="https://wa.me/573142968931"
           target="_blank"
           class="flex justify-center items-center gap-3 px-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
         >
           <Icon
-            name="mdi:web"
+            name="ph:whatsapp-logo-duotone"
             class="h-6 w-6 text-white"
             stroke="currentColor"
             stroke-width="0.5"
           />
-          <span class="text-sm sm:text-base">Páginas web</span>
-        </a>
-      </div>
-      <div
-        class="bg-gradient-to-r from-[#ff4d5c] to-primary hover:scale-110 transition-all rounded-full"
-      >
-        <a
-          href="https://api.whatsapp.com/send?phone=573142968931&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios%20de%20IA"
-          target="_blank"
-          class="flex justify-center items-center gap-3 px-3 py-2 bg-gradient-to-r from-black/[0.45] via-black/30 to-black/[0.45] m-[3px] w-56 rounded-full"
-        >
-          <Icon
-            name="mdi:robot"
-            class="h-6 w-6 text-white animate-fade"
-            stroke="currentColor"
-            stroke-width="0.5"
-          />
-          <span class="text-sm sm:text-base">IA</span>
+          <span class="text-sm sm:text-base">Contactar</span>
         </a>
       </div>
     </div>
   </div>
+  <div class="section-fade"></div>
 </Section>
 <style>
-  h1::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      radial-gradient(circle at 20% 80%, #1a0033 10%, transparent 50%),
-      radial-gradient(circle at 20% 50%, #330033 10%, transparent 50%),
-      radial-gradient(circle at 80% 20%, #2b0033 5%, transparent 50%),
-      radial-gradient(circle at 80% 80%, #000033 10%, transparent 50%),
-      radial-gradient(circle at 40% 20%, #1a0044 10%, transparent 100%);
+  .hero-background {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: 
+      radial-gradient(circle at 30% 30%, rgba(109, 40, 217, 0.25) 0%, transparent 40%),
+      radial-gradient(circle at 70% 60%, rgba(37, 99, 235, 0.2) 0%, transparent 40%),
+      radial-gradient(circle at 40% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 30%),
+      radial-gradient(circle at 80% 20%, rgba(79, 70, 229, 0.2) 0%, transparent 40%);
+    transform: rotate(-10deg);
+    z-index: 0;
+    animation: pulse 15s ease-in-out infinite alternate;
+  }
 
-    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+  .hero-mesh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0v100h100V0H0zm1 1h98v98H1V1z' fill='rgba(255,255,255,0.05)'/%3E%3Cpath d='M1 1h98v98H1V1z' fill='none' stroke='rgba(255,255,255,0.03)' stroke-width='0.25'/%3E%3C/svg%3E");
+    background-size: 50px 50px;
+    backdrop-filter: blur(4px);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .section-fade {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to top, #030712 10%, transparent 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.7;
+      transform: rotate(-10deg) scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: rotate(-10deg) scale(1.05);
+    }
+    100% {
+      opacity: 0.8;
+      transform: rotate(-10deg) scale(1);
+    }
   }
 </style>
